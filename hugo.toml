@@ -1,0 +1,16 @@
+baseURL = "https://linuxdive.com"
+languageCode = "en-us"
+title = "LinuxDive"
+
+[params]
+  siteName = "LinuxDive"
+  siteDescription = "Editorial Linux site exploring impact on government, education, business, personal computing, and community."
+
+[markup.highlight]
+  codeFences = true
+  lineNos = true
+  style = "native"
+
+[permalinks]
+  posts = "/posts/:contentbasename/"
+  pages = "/:contentbasename:/"

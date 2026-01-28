@@ -1,0 +1,29 @@
+{{ define "main" }}
+<article class="post">
+  <header class="post-header">
+    {{ if .Params.featured_image }}
+      <div class="post-featured-image">
+        <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}">
+      </div>
+    {{ end }}
+    <h1>{{ .Title }}</h1>
+    <time datetime="{{ .Date.Format "2006-01-02" }}" class="post-date">
+      {{ .Date.Format "January 2, 2006" }}
+    </time>
+  </header>
+
+  <div class="post-content">
+    {{ .Content }}
+  </div>
+
+  {{ if .Params.tags }}
+  <footer class="post-footer">
+    <div class="post-tags">
+      {{ range .Params.tags }}
+        <span class="tag">{{ . }}</span>
+      {{ end }}
+    </div>
+  </footer>
+  {{ end }}
+</article>
+{{ end }}

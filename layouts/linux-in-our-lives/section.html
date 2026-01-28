@@ -1,0 +1,216 @@
+{{ define "main" }}
+<div class="pillar-page">
+  <div class="pillar-intro">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Content }}</p>
+  </div>
+
+  <!-- Category Filter -->
+  <nav class="category-filter">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="whats-new">What's New</button>
+    <button class="filter-btn" data-category="distros">Distros</button>
+    <button class="filter-btn" data-category="personal">Personal Computing</button>
+    <button class="filter-btn" data-category="hardware">Hardware & Devices</button>
+    <button class="filter-btn" data-category="linux-life">Linux Life</button>
+  </nav>
+
+  <!-- Articles List -->
+  <div class="pillar-articles">
+    {{ $articles := where (where .Site.RegularPages "Section" "posts") "Params.draft" false }}
+    
+    <!-- All categories combined (default view) -->
+    <div class="category-group active" data-category="all">
+      {{ range $articles }}
+        <article class="pillar-article" data-category="{{ .Params.pillar_category }}">
+          {{ if .Params.featured_image }}
+            <div class="pillar-article-image">
+              <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}">
+            </div>
+          {{ end }}
+          <div class="article-header">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <time datetime="{{ .Date.Format "2006-01-02" }}" class="article-date">
+              {{ .Date.Format "Jan 2, 2006" }}
+            </time>
+          </div>
+          <p class="article-excerpt">{{ .Summary | plainify }}</p>
+          {{ if .Params.tags }}
+            <div class="article-tags">
+              {{ range .Params.tags }}
+                <span class="tag">{{ . }}</span>
+              {{ end }}
+            </div>
+          {{ end }}
+          <a href="{{ .RelPermalink }}" class="read-link">Read full article →</a>
+        </article>
+      {{ end }}
+    </div>
+
+    <!-- What's New -->
+    <div class="category-group" data-category="whats-new">
+      {{ range (where $articles "Params.pillar_category" "whats-new") }}
+        <article class="pillar-article">
+          {{ if .Params.featured_image }}
+            <div class="pillar-article-image">
+              <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}">
+            </div>
+          {{ end }}
+          <div class="article-header">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <time datetime="{{ .Date.Format "2006-01-02" }}" class="article-date">
+              {{ .Date.Format "Jan 2, 2006" }}
+            </time>
+          </div>
+          <p class="article-excerpt">{{ .Summary | plainify }}</p>
+          {{ if .Params.tags }}
+            <div class="article-tags">
+              {{ range .Params.tags }}
+                <span class="tag">{{ . }}</span>
+              {{ end }}
+            </div>
+          {{ end }}
+          <a href="{{ .RelPermalink }}" class="read-link">Read full article →</a>
+        </article>
+      {{ end }}
+    </div>
+
+    <!-- Distros -->
+    <div class="category-group" data-category="distros">
+      {{ range (where $articles "Params.pillar_category" "distros") }}
+        <article class="pillar-article">
+          {{ if .Params.featured_image }}
+            <div class="pillar-article-image">
+              <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}">
+            </div>
+          {{ end }}
+          <div class="article-header">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <time datetime="{{ .Date.Format "2006-01-02" }}" class="article-date">
+              {{ .Date.Format "Jan 2, 2006" }}
+            </time>
+          </div>
+          <p class="article-excerpt">{{ .Summary | plainify }}</p>
+          {{ if .Params.tags }}
+            <div class="article-tags">
+              {{ range .Params.tags }}
+                <span class="tag">{{ . }}</span>
+              {{ end }}
+            </div>
+          {{ end }}
+          <a href="{{ .RelPermalink }}" class="read-link">Read full article →</a>
+        </article>
+      {{ end }}
+    </div>
+
+    <!-- Personal Computing -->
+    <div class="category-group" data-category="personal">
+      {{ range (where $articles "Params.pillar_category" "personal") }}
+        <article class="pillar-article">
+          {{ if .Params.featured_image }}
+            <div class="pillar-article-image">
+              <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}">
+            </div>
+          {{ end }}
+          <div class="article-header">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <time datetime="{{ .Date.Format "2006-01-02" }}" class="article-date">
+              {{ .Date.Format "Jan 2, 2006" }}
+            </time>
+          </div>
+          <p class="article-excerpt">{{ .Summary | plainify }}</p>
+          {{ if .Params.tags }}
+            <div class="article-tags">
+              {{ range .Params.tags }}
+                <span class="tag">{{ . }}</span>
+              {{ end }}
+            </div>
+          {{ end }}
+          <a href="{{ .RelPermalink }}" class="read-link">Read full article →</a>
+        </article>
+      {{ end }}
+    </div>
+
+    <!-- Hardware & Devices -->
+    <div class="category-group" data-category="hardware">
+      {{ range (where $articles "Params.pillar_category" "hardware") }}
+        <article class="pillar-article">
+          {{ if .Params.featured_image }}
+            <div class="pillar-article-image">
+              <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}">
+            </div>
+          {{ end }}
+          <div class="article-header">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <time datetime="{{ .Date.Format "2006-01-02" }}" class="article-date">
+              {{ .Date.Format "Jan 2, 2006" }}
+            </time>
+          </div>
+          <p class="article-excerpt">{{ .Summary | plainify }}</p>
+          {{ if .Params.tags }}
+            <div class="article-tags">
+              {{ range .Params.tags }}
+                <span class="tag">{{ . }}</span>
+              {{ end }}
+            </div>
+          {{ end }}
+          <a href="{{ .RelPermalink }}" class="read-link">Read full article →</a>
+        </article>
+      {{ end }}
+    </div>
+
+    <!-- Linux Life -->
+    <div class="category-group" data-category="linux-life">
+      {{ range (where $articles "Params.pillar_category" "linux-life") }}
+        <article class="pillar-article">
+          {{ if .Params.featured_image }}
+            <div class="pillar-article-image">
+              <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}">
+            </div>
+          {{ end }}
+          <div class="article-header">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <time datetime="{{ .Date.Format "2006-01-02" }}" class="article-date">
+              {{ .Date.Format "Jan 2, 2006" }}
+            </time>
+          </div>
+          <p class="article-excerpt">{{ .Summary | plainify }}</p>
+          {{ if .Params.tags }}
+            <div class="article-tags">
+              {{ range .Params.tags }}
+                <span class="tag">{{ . }}</span>
+              {{ end }}
+            </div>
+          {{ end }}
+          <a href="{{ .RelPermalink }}" class="read-link">Read full article →</a>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+<script>
+// Simple category filter (gracefully degrades without JS)
+document.addEventListener('DOMContentLoaded', function() {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const categoryGroups = document.querySelectorAll('.category-group');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const category = this.getAttribute('data-category');
+      
+      filterBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      
+      categoryGroups.forEach(group => {
+        if (group.getAttribute('data-category') === category) {
+          group.classList.add('active');
+        } else {
+          group.classList.remove('active');
+        }
+      });
+    });
+  });
+});
+</script>
+{{ end }}

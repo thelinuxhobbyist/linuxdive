@@ -1,0 +1,80 @@
+{{ define "main" }}
+<div class="homepage">
+  <!-- Featured Article Section -->
+  {{ $featured := where .Site.RegularPages "Params.featured" true }}
+  {{ if $featured }}
+    {{ with index $featured 0 }}
+    <section class="featured-section">
+      <h2 class="section-title">Featured</h2>
+      <article class="featured-article">
+        {{ if .Params.featured_image }}
+          <div class="featured-image">
+            <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}">
+          </div>
+        {{ end }}
+        <h1>{{ .Title }}</h1>
+        <div class="article-meta">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">
+            {{ .Date.Format "January 2, 2006" }}
+          </time>
+        </div>
+        <p class="article-excerpt">{{ .Summary | plainify }}</p>
+        <a href="{{ .RelPermalink }}" class="read-link">Read article →</a>
+      </article>
+    </section>
+    {{ end }}
+  {{ end }}
+
+  <!-- Latest Content Section -->
+  <section class="latest-section">
+    <h2 class="section-title">Latest Content</h2>
+    <div class="articles-list">
+      {{ $posts := where (where .Site.RegularPages "Section" "posts") "Params.draft" false }}
+      {{ range first 8 $posts }}
+        <article class="article-item">
+          {{ if .Params.featured_image }}
+            <div class="article-image">
+              <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}">
+            </div>
+          {{ end }}
+          <div class="article-header">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <time datetime="{{ .Date.Format "2006-01-02" }}" class="article-date">
+              {{ .Date.Format "Jan 2, 2006" }}
+            </time>
+          </div>
+          <p class="article-excerpt">{{ .Summary | plainify }}</p>
+          <a href="{{ .RelPermalink }}" class="read-link">Read article →</a>
+        </article>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- Recommended Reads Section -->
+  {{ $recommended := where .Site.RegularPages "Params.recommended" true }}
+  {{ if $recommended }}
+    <section class="recommended-section">
+      <h2 class="section-title">Recommended Reads</h2>
+      <div class="articles-list">
+        {{ range first 5 $recommended }}
+          <article class="article-item">
+            {{ if .Params.featured_image }}
+              <div class="article-image">
+                <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}">
+              </div>
+            {{ end }}
+            <div class="article-header">
+              <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+              <time datetime="{{ .Date.Format "2006-01-02" }}" class="article-date">
+                {{ .Date.Format "Jan 2, 2006" }}
+              </time>
+            </div>
+            <p class="article-excerpt">{{ .Summary | plainify }}</p>
+            <a href="{{ .RelPermalink }}" class="read-link">Read article →</a>
+          </article>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,186 @@
+{{ define "main" }}
+<div class="pillar-page">
+  <div class="pillar-intro">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Content }}</p>
+  </div>
+
+  <!-- Category Filter -->
+  <nav class="category-filter">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="government">Government & Policy</button>
+    <button class="filter-btn" data-category="education">Education & Learning</button>
+    <button class="filter-btn" data-category="business">Business & Enterprise</button>
+    <button class="filter-btn" data-category="personal">Personal Computing</button>
+    <button class="filter-btn" data-category="community">Community & Open Source</button>
+  </nav>
+
+  <!-- Articles List -->
+  <div class="pillar-articles">
+    {{ $articles := where (where .Site.RegularPages "Section" "posts") "Params.draft" false }}
+    
+    <!-- All categories combined (default view) -->
+    <div class="category-group active" data-category="all">
+      {{ range $articles }}
+        <article class="pillar-article" data-category="{{ .Params.pillar_category }}">
+          <div class="article-header">
+            <time datetime="{{ .Date.Format "2006-01-02" }}" class="article-date">
+              {{ .Date.Format "Jan 2, 2006" }}
+            </time>
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          </div>
+          <p class="article-excerpt">{{ .Summary | plainify }}</p>
+          {{ if .Params.tags }}
+            <div class="article-tags">
+              {{ range .Params.tags }}
+                <span class="tag">{{ . }}</span>
+              {{ end }}
+            </div>
+          {{ end }}
+          <a href="{{ .RelPermalink }}" class="read-link">Read full article →</a>
+        </article>
+      {{ end }}
+    </div>
+
+    <!-- Government & Policy -->
+    <div class="category-group" data-category="government">
+      {{ range (where $articles "Params.pillar_category" "government") }}
+        <article class="pillar-article">
+          <div class="article-header">
+            <time datetime="{{ .Date.Format "2006-01-02" }}" class="article-date">
+              {{ .Date.Format "Jan 2, 2006" }}
+            </time>
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          </div>
+          <p class="article-excerpt">{{ .Summary | plainify }}</p>
+          {{ if .Params.tags }}
+            <div class="article-tags">
+              {{ range .Params.tags }}
+                <span class="tag">{{ . }}</span>
+              {{ end }}
+            </div>
+          {{ end }}
+          <a href="{{ .RelPermalink }}" class="read-link">Read full article →</a>
+        </article>
+      {{ end }}
+    </div>
+
+    <!-- Education & Learning -->
+    <div class="category-group" data-category="education">
+      {{ range (where $articles "Params.pillar_category" "education") }}
+        <article class="pillar-article">
+          <div class="article-header">
+            <time datetime="{{ .Date.Format "2006-01-02" }}" class="article-date">
+              {{ .Date.Format "Jan 2, 2006" }}
+            </time>
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          </div>
+          <p class="article-excerpt">{{ .Summary | plainify }}</p>
+          {{ if .Params.tags }}
+            <div class="article-tags">
+              {{ range .Params.tags }}
+                <span class="tag">{{ . }}</span>
+              {{ end }}
+            </div>
+          {{ end }}
+          <a href="{{ .RelPermalink }}" class="read-link">Read full article →</a>
+        </article>
+      {{ end }}
+    </div>
+
+    <!-- Business & Enterprise -->
+    <div class="category-group" data-category="business">
+      {{ range (where $articles "Params.pillar_category" "business") }}
+        <article class="pillar-article">
+          <div class="article-header">
+            <time datetime="{{ .Date.Format "2006-01-02" }}" class="article-date">
+              {{ .Date.Format "Jan 2, 2006" }}
+            </time>
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          </div>
+          <p class="article-excerpt">{{ .Summary | plainify }}</p>
+          {{ if .Params.tags }}
+            <div class="article-tags">
+              {{ range .Params.tags }}
+                <span class="tag">{{ . }}</span>
+              {{ end }}
+            </div>
+          {{ end }}
+          <a href="{{ .RelPermalink }}" class="read-link">Read full article →</a>
+        </article>
+      {{ end }}
+    </div>
+
+    <!-- Personal Computing -->
+    <div class="category-group" data-category="personal">
+      {{ range (where $articles "Params.pillar_category" "personal") }}
+        <article class="pillar-article">
+          <div class="article-header">
+            <time datetime="{{ .Date.Format "2006-01-02" }}" class="article-date">
+              {{ .Date.Format "Jan 2, 2006" }}
+            </time>
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          </div>
+          <p class="article-excerpt">{{ .Summary | plainify }}</p>
+          {{ if .Params.tags }}
+            <div class="article-tags">
+              {{ range .Params.tags }}
+                <span class="tag">{{ . }}</span>
+              {{ end }}
+            </div>
+          {{ end }}
+          <a href="{{ .RelPermalink }}" class="read-link">Read full article →</a>
+        </article>
+      {{ end }}
+    </div>
+
+    <!-- Community & Open Source -->
+    <div class="category-group" data-category="community">
+      {{ range (where $articles "Params.pillar_category" "community") }}
+        <article class="pillar-article">
+          <div class="article-header">
+            <time datetime="{{ .Date.Format "2006-01-02" }}" class="article-date">
+              {{ .Date.Format "Jan 2, 2006" }}
+            </time>
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          </div>
+          <p class="article-excerpt">{{ .Summary | plainify }}</p>
+          {{ if .Params.tags }}
+            <div class="article-tags">
+              {{ range .Params.tags }}
+                <span class="tag">{{ . }}</span>
+              {{ end }}
+            </div>
+          {{ end }}
+          <a href="{{ .RelPermalink }}" class="read-link">Read full article →</a>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+<script>
+// Simple category filter (gracefully degrades without JS)
+document.addEventListener('DOMContentLoaded', function() {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const categoryGroups = document.querySelectorAll('.category-group');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const category = this.getAttribute('data-category');
+      
+      filterBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      
+      categoryGroups.forEach(group => {
+        if (group.getAttribute('data-category') === category) {
+          group.classList.add('active');
+        } else {
+          group.classList.remove('active');
+        }
+      });
+    });
+  });
+});
+</script>
+{{ end }}

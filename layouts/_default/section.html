@@ -1,0 +1,19 @@
+{{ define "main" }}
+<section class="posts-section">
+  <h1>{{ .Title }}</h1>
+  <div class="articles-list">
+    {{ range .Pages }}
+      <article class="article-item">
+        <div class="article-header">
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <time datetime="{{ .Date.Format "2006-01-02" }}" class="article-date">
+            {{ .Date.Format "Jan 2, 2006" }}
+          </time>
+        </div>
+        <p class="article-excerpt">{{ .Summary | plainify }}</p>
+        <a href="{{ .RelPermalink }}" class="read-link">Read article →</a>
+      </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

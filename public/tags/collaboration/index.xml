@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Collaboration on LinuxDive</title>
+    <link>http://localhost:1313/tags/collaboration/</link>
+    <description>Recent content in Collaboration on LinuxDive</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/collaboration/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Linux Community: How Millions Collaborate to Build Technology</title>
+      <link>http://localhost:1313/posts/linux-open-source-community/</link>
+      <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/linux-open-source-community/</guid>
+      <description>&lt;p&gt;Linux is not just software—it&amp;rsquo;s a global community of developers, maintainers, users, and organizations collaborating across borders, timezones, and languages. This ecosystem has created something unprecedented in technology history.&lt;/p&gt;&#xA;&lt;h2 id=&#34;distributed-development-at-scale&#34;&gt;Distributed Development at Scale&lt;/h2&gt;&#xA;&lt;p&gt;Tens of thousands of developers contribute to Linux development. The kernel alone receives thousands of patches monthly from hundreds of developers. This distributed, asynchronous model has proven remarkably effective.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mentorship-and-knowledge-transfer&#34;&gt;Mentorship and Knowledge Transfer&lt;/h2&gt;&#xA;&lt;p&gt;The Linux community has developed sophisticated mechanisms for onboarding new contributors:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

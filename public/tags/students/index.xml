@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Students on LinuxDive</title>
+    <link>http://localhost:1313/tags/students/</link>
+    <description>Recent content in Students on LinuxDive</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/students/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux in Education: Building the Next Generation of Tech Skills</title>
+      <link>http://localhost:1313/posts/linux-in-education/</link>
+      <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/linux-in-education/</guid>
+      <description>&lt;p&gt;Universities and schools are discovering that Linux is an ideal platform for teaching computer science fundamentals. Unlike proprietary systems that hide implementation details, Linux allows students to understand operating systems from first principles.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-linux-for-education&#34;&gt;Why Linux for Education&lt;/h2&gt;&#xA;&lt;p&gt;Linux removes the cost barrier to computing education. Students can run a complete development environment on older hardware, democratizing access to quality technical training. A single laptop can run multiple virtual machines, enabling experimentation at scale.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
