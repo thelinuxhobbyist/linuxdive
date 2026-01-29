@@ -2,11 +2,22 @@
 <html lang="en">
 <head>
 	<meta name="generator" content="Hugo 0.152.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FB2GJWT21S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FB2GJWT21S');
+  </script>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LinuxDive</title>
   <meta name="description" content="Editorial Linux site exploring impact on government, education, business, personal computing, and community.">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
   <header class="site-header">
@@ -14,12 +25,41 @@
     <div class="nav-brand">
       <a href="/">LinuxDive</a>
     </div>
-    <div class="nav-links">
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+      <span class="material-icons" id="menuIcon">menu</span>
+      <span class="material-icons" id="closeIcon" style="display: none;">close</span>
+    </button>
+    <div class="nav-links" id="navLinks">
       <a href="/">Home</a>
       <a href="/linux-in-our-lives/">Linux in Our Lives</a>
     </div>
   </nav>
 </header>
+<script>
+  const toggle = document.getElementById('mobileMenuToggle');
+  const navLinks = document.getElementById('navLinks');
+  const menuIcon = document.getElementById('menuIcon');
+  const closeIcon = document.getElementById('closeIcon');
+  
+  toggle.addEventListener('click', function() {
+    navLinks.classList.toggle('active');
+    if (navLinks.classList.contains('active')) {
+      menuIcon.style.display = 'none';
+      closeIcon.style.display = 'block';
+    } else {
+      menuIcon.style.display = 'block';
+      closeIcon.style.display = 'none';
+    }
+  });
+  
+  document.querySelectorAll('#navLinks a').forEach(link => {
+    link.addEventListener('click', function() {
+      navLinks.classList.remove('active');
+      menuIcon.style.display = 'block';
+      closeIcon.style.display = 'none';
+    });
+  });
+</script>
 
   
   <main>
@@ -90,8 +130,7 @@ Here&rsquo;s the thing: the question itself is a trap. A beautiful, shiny, anxie
               Jan 24, 2026
             </time>
           </div>
-          <p class="article-excerpt">on Linux Was Never Simple
-For years, gaming on Linux existed in a kind of tolerated contradiction. It was possible, but it never felt entirely stable. Some titles ran without issue, while others required workarounds or special settings. Updates sometimes broke things in unexpected ways, and new releases often introduced uncertainty. Playing games on Linux was never impossible, but it was never entirely predictable either.
+          <p class="article-excerpt">Gaming on Linux Was Never Simple For years, gaming on Linux existed in a kind of tolerated contradiction. It was possible, but it never felt entirely stable. Some titles ran without issue, while others required workarounds or special settings. Updates sometimes broke things in unexpected ways, and new releases often introduced uncertainty. Playing games on Linux was never impossible, but it was never entirely predictable either.
 This shaped the kind of people who used Linux for gaming. It favored patience, curiosity, and a willingness to tolerate friction. Gaming wasn&rsquo;t the reason most people chose Linux, but it was something they accommodated. Recommending Linux to someone who cared about games usually came with a pause, a softening, or a long list of exceptions. People didn&rsquo;t just say yes; they said mostly.
 </p>
           <a href="/posts/when-games-started-working-linux-got-new-users/" class="read-link">Read article →</a>
@@ -128,7 +167,7 @@ But looking at how the Raspberry Pi is used today, it&rsquo;s hard to ignore tha
               Jan 21, 2026
             </time>
           </div>
-          <p class="article-excerpt">ping is often treated like a phase Linux users are supposed to grow out of. Something beginners do before they &ldquo;settle down,&rdquo; pick a distribution, and stop reinstalling their system every few months.
+          <p class="article-excerpt">Distro hopping is often treated like a phase Linux users are supposed to grow out of. Something beginners do before they &ldquo;settle down,&rdquo; pick a distribution, and stop reinstalling their system every few months.
 But honestly? There&rsquo;s nothing wrong with distro hopping.
 In fact, it&rsquo;s one of the most natural—and most honest—ways to learn Linux.
 At its core, distro hopping isn&rsquo;t about indecision. It&rsquo;s about curiosity. And curiosity is how people actually understand the Linux world.
@@ -177,8 +216,7 @@ Here&rsquo;s the thing: the question itself is a trap. A beautiful, shiny, anxie
                 Jan 24, 2026
               </time>
             </div>
-            <p class="article-excerpt">on Linux Was Never Simple
-For years, gaming on Linux existed in a kind of tolerated contradiction. It was possible, but it never felt entirely stable. Some titles ran without issue, while others required workarounds or special settings. Updates sometimes broke things in unexpected ways, and new releases often introduced uncertainty. Playing games on Linux was never impossible, but it was never entirely predictable either.
+            <p class="article-excerpt">Gaming on Linux Was Never Simple For years, gaming on Linux existed in a kind of tolerated contradiction. It was possible, but it never felt entirely stable. Some titles ran without issue, while others required workarounds or special settings. Updates sometimes broke things in unexpected ways, and new releases often introduced uncertainty. Playing games on Linux was never impossible, but it was never entirely predictable either.
 This shaped the kind of people who used Linux for gaming. It favored patience, curiosity, and a willingness to tolerate friction. Gaming wasn&rsquo;t the reason most people chose Linux, but it was something they accommodated. Recommending Linux to someone who cared about games usually came with a pause, a softening, or a long list of exceptions. People didn&rsquo;t just say yes; they said mostly.
 </p>
             <a href="/posts/when-games-started-working-linux-got-new-users/" class="read-link">Read article →</a>
@@ -215,7 +253,7 @@ But looking at how the Raspberry Pi is used today, it&rsquo;s hard to ignore tha
                 Jan 21, 2026
               </time>
             </div>
-            <p class="article-excerpt">ping is often treated like a phase Linux users are supposed to grow out of. Something beginners do before they &ldquo;settle down,&rdquo; pick a distribution, and stop reinstalling their system every few months.
+            <p class="article-excerpt">Distro hopping is often treated like a phase Linux users are supposed to grow out of. Something beginners do before they &ldquo;settle down,&rdquo; pick a distribution, and stop reinstalling their system every few months.
 But honestly? There&rsquo;s nothing wrong with distro hopping.
 In fact, it&rsquo;s one of the most natural—and most honest—ways to learn Linux.
 At its core, distro hopping isn&rsquo;t about indecision. It&rsquo;s about curiosity. And curiosity is how people actually understand the Linux world.

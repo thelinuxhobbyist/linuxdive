@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FB2GJWT21S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FB2GJWT21S');
+  </script>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>When Games Started Working, Linux Got New Users - LinuxDive</title>
-  <meta name="description" content="on Linux Was Never Simple
+  <meta name="description" content="Gaming on Linux Was Never Simple
 For years, gaming on Linux existed in a kind of tolerated contradiction. It was possible, but it never felt entirely stable. Some titles ran without issue, while others required workarounds or special settings. Updates sometimes broke things in unexpected ways, and new releases often introduced uncertainty. Playing games on Linux was never impossible, but it was never entirely predictable either.
 This shaped the kind of people who used Linux for gaming. It favored patience, curiosity, and a willingness to tolerate friction. Gaming wasn&rsquo;t the reason most people chose Linux, but it was something they accommodated. Recommending Linux to someone who cared about games usually came with a pause, a softening, or a long list of exceptions. People didn&rsquo;t just say yes; they said mostly.">
   <link rel="stylesheet" href="/css/style.css">
@@ -15,12 +25,30 @@ This shaped the kind of people who used Linux for gaming. It favored patience, c
     <div class="nav-brand">
       <a href="/">LinuxDive</a>
     </div>
-    <div class="nav-links">
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
       <a href="/">Home</a>
       <a href="/linux-in-our-lives/">Linux in Our Lives</a>
     </div>
   </nav>
 </header>
+<script>
+  document.getElementById('mobileMenuToggle').addEventListener('click', function() {
+    document.getElementById('navLinks').classList.toggle('active');
+    this.classList.toggle('active');
+  });
+  
+  document.querySelectorAll('#navLinks a').forEach(link => {
+    link.addEventListener('click', function() {
+      document.getElementById('navLinks').classList.remove('active');
+      document.getElementById('mobileMenuToggle').classList.remove('active');
+    });
+  });
+</script>
 
   
   <main>
@@ -39,7 +67,7 @@ This shaped the kind of people who used Linux for gaming. It favored patience, c
   </header>
 
   <div class="post-content">
-    <p>on Linux Was Never Simple</p>
+    <h2 id="gaming-on-linux-was-never-simple">Gaming on Linux Was Never Simple</h2>
 <p>For years, gaming on Linux existed in a kind of tolerated contradiction. It was possible, but it never felt entirely stable. Some titles ran without issue, while others required workarounds or special settings. Updates sometimes broke things in unexpected ways, and new releases often introduced uncertainty. Playing games on Linux was never impossible, but it was never entirely predictable either.</p>
 <p>This shaped the kind of people who used Linux for gaming. It favored patience, curiosity, and a willingness to tolerate friction. Gaming wasn&rsquo;t the reason most people chose Linux, but it was something they accommodated. Recommending Linux to someone who cared about games usually came with a pause, a softening, or a long list of exceptions. People didn&rsquo;t just say yes; they said mostly.</p>
 <h2 id="consistency-changed-everything">Consistency Changed Everything</h2>
@@ -60,8 +88,7 @@ This shaped the kind of people who used Linux for gaming. It favored patience, c
 <p>Gaming was more than entertainment—it served as a stress test for usability. If Linux could handle the demands of modern games, it could handle everyday computing. Once users realized this, trying Linux no longer felt like a risk. They arrived through curiosity, through devices, or through cultural exposure. They stayed because nothing forced them away.</p>
 <h2 id="why-this-matters">Why This Matters</h2>
 <p>No school program, government initiative, or nonprofit campaign has ever made Linux feel this accessible to so many people at once. Cultural influence works differently, bypassing formal structures and reaching audiences at scale. When someone with millions of followers encourages young people to explore Linux, it reframes the system as approachable and reasonable. It&rsquo;s not about conversion—it&rsquo;s about normalization.</p>
-<p>When games started working, Linux stopped feeling like a test. When cultural figures treated it as normal, Linux stopped requiring permission. This combination of technical maturity and cultural validation finally allowed a new wave of users to arrive. They didn&rsquo;t need convincing. They were already watching, and they simply experienced Linux as part of their everyday digital life.
-����������</p>
+<p>When games started working, Linux stopped feeling like a test. When cultural figures treated it as normal, Linux stopped requiring permission. This combination of technical maturity and cultural validation finally allowed a new wave of users to arrive. They didn&rsquo;t need convincing. They were already watching, and they simply experienced Linux as part of their everyday digital life.</p>
 
   </div>
 

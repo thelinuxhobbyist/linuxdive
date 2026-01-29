@@ -3,9 +3,38 @@
     <div class="nav-brand">
       <a href="{{ "/" | relURL }}">LinuxDive</a>
     </div>
-    <div class="nav-links">
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+      <span class="material-icons" id="menuIcon">menu</span>
+      <span class="material-icons" id="closeIcon" style="display: none;">close</span>
+    </button>
+    <div class="nav-links" id="navLinks">
       <a href="{{ "/" | relURL }}">Home</a>
       <a href="{{ "/linux-in-our-lives/" | relURL }}">Linux in Our Lives</a>
     </div>
   </nav>
 </header>
+<script>
+  const toggle = document.getElementById('mobileMenuToggle');
+  const navLinks = document.getElementById('navLinks');
+  const menuIcon = document.getElementById('menuIcon');
+  const closeIcon = document.getElementById('closeIcon');
+  
+  toggle.addEventListener('click', function() {
+    navLinks.classList.toggle('active');
+    if (navLinks.classList.contains('active')) {
+      menuIcon.style.display = 'none';
+      closeIcon.style.display = 'block';
+    } else {
+      menuIcon.style.display = 'block';
+      closeIcon.style.display = 'none';
+    }
+  });
+  
+  document.querySelectorAll('#navLinks a').forEach(link => {
+    link.addEventListener('click', function() {
+      navLinks.classList.remove('active');
+      menuIcon.style.display = 'block';
+      closeIcon.style.display = 'none';
+    });
+  });
+</script>
