@@ -482,17 +482,13 @@ a:hover {
   padding-bottom: 0;
   border-bottom: none;
   cursor: pointer;
-  transition: opacity 0.2s;
-  display: flex;
-  flex-direction: column;
-}
+    transition: none;
+    display: flex;
+    flex-direction: column;
+  }
 
-.pillar-article:hover {
-  opacity: 0.8;
-}
-
-.pillar-article:last-child {
-  border-bottom: none;
+  .pillar-article:hover {
+    opacity: 1;
   padding-bottom: 0;
 }
 
@@ -727,6 +723,12 @@ a:hover {
     border-bottom: none;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+    transition: none;
+  }
+
+  .article-item:hover {
+    opacity: 1;
   }
 
   .article-image {
@@ -746,6 +748,14 @@ a:hover {
 
   .header-nav {
     padding: 0 1rem;
+  }
+
+  .article-item:hover {
+    opacity: 1;
+  }
+
+  .pillar-article:hover {
+    opacity: 1;
   }
 
   h1 {
