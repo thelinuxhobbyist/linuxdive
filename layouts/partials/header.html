@@ -44,8 +44,8 @@
     let article = e.target.closest('.article-item, .pillar-article, .featured-article');
     
     if (article && e.target.tagName !== 'A' && e.target.tagName !== 'BUTTON') {
-      // Find the link in this article
-      const link = article.querySelector('h3 a') || article.querySelector('h1 a');
+      // Find the link in this article - try multiple selectors
+      let link = article.querySelector('h3 a') || article.querySelector('h1 a') || article.querySelector('a');
       if (link) {
         e.preventDefault();
         window.location.href = link.href;
