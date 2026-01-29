@@ -38,40 +38,18 @@
     });
   });
   
-  // Make article items clickable
-  document.querySelectorAll('.article-item').forEach(item => {
-    item.addEventListener('click', function(e) {
-      if (e.target.tagName !== 'A') {
-        const link = this.querySelector('h3 a');
-        if (link) {
-          window.location.href = link.href;
-        }
+  // Make article items clickable using event delegation
+  document.addEventListener('click', function(e) {
+    // Find the closest article container
+    let article = e.target.closest('.article-item, .pillar-article, .featured-article');
+    
+    if (article && e.target.tagName !== 'A' && e.target.tagName !== 'BUTTON') {
+      // Find the link in this article
+      const link = article.querySelector('h3 a') || article.querySelector('h1 a');
+      if (link) {
+        e.preventDefault();
+        window.location.href = link.href;
       }
-    });
+    }
   });
-  
-  // Make pillar articles clickable
-  document.querySelectorAll('.pillar-article').forEach(item => {
-    item.addEventListener('click', function(e) {
-      if (e.target.tagName !== 'A') {
-        const link = this.querySelector('h3 a');
-        if (link) {
-          window.location.href = link.href;
-        }
-      }
-    });
-  });
-  
-  // Make featured article clickable
-  const featuredArticle = document.querySelector('.featured-article');
-  if (featuredArticle) {
-    featuredArticle.addEventListener('click', function(e) {
-      if (e.target.tagName !== 'A') {
-        const link = this.querySelector('h1 a') || this.querySelector('a');
-        if (link) {
-          window.location.href = link.href;
-        }
-      }
-    });
-  }
 </script>

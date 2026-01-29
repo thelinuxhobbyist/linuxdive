@@ -72,6 +72,18 @@
   });
   
   
+  document.querySelectorAll('.pillar-article').forEach(item => {
+    item.addEventListener('click', function(e) {
+      if (e.target.tagName !== 'A') {
+        const link = this.querySelector('h3 a');
+        if (link) {
+          window.location.href = link.href;
+        }
+      }
+    });
+  });
+  
+  
   const featuredArticle = document.querySelector('.featured-article');
   if (featuredArticle) {
     featuredArticle.addEventListener('click', function(e) {
@@ -111,13 +123,13 @@
     </div>
 
     <div class="footer-info-section">
-      <p class="footer-uptime">Uptime: 2024-2026</p>
+      <p class="footer-uptime">Uptime: Since 2026</p>
       <p class="footer-tagline">No cookies. No trackers. Just Linux.</p>
     </div>
   </div>
   
   <div class="footer-copyright">
-    <span>&copy; 2026 LinuxDive.com</span> | <span>Content licensed under CC BY-SA 4.0</span>
+    <span>&copy; 2026 LinuxDive.com</span> | <span>All rights reserved</span>
   </div>
 </footer>
 
