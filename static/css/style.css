@@ -750,12 +750,31 @@ a:hover {
     padding: 0 1rem;
   }
 
-  .article-item:hover {
-    opacity: 1;
+  .article-item {
+    transition: none !important;
   }
 
-  .pillar-article:hover {
-    opacity: 1;
+  .article-item:hover,
+  .article-item:active {
+    opacity: 1 !important;
+  }
+
+  .pillar-article {
+    transition: none !important;
+  }
+
+  .pillar-article:hover,
+  .pillar-article:active {
+    opacity: 1 !important;
+  }
+
+  .featured-article {
+    transition: none !important;
+  }
+
+  .featured-article:hover,
+  .featured-article:active {
+    opacity: 1 !important;
   }
 
   h1 {
