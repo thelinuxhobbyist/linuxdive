@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hardware on LinuxDive</title>
-    <link>http://localhost:35031/tags/hardware/</link>
+    <link>https://linuxdive.com/tags/hardware/</link>
     <description>Recent content in Hardware on LinuxDive</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 21 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:35031/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://linuxdive.com/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Raspberry Pi Outgrew Its Original Promise</title>
-      <link>http://localhost:35031/posts/the-raspberry-pi-outgrew-its-original-promise/</link>
+      <link>https://linuxdive.com/posts/the-raspberry-pi-outgrew-its-original-promise/</link>
       <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35031/posts/the-raspberry-pi-outgrew-its-original-promise/</guid>
+      <guid>https://linuxdive.com/posts/the-raspberry-pi-outgrew-its-original-promise/</guid>
       <description>&lt;p&gt;The Raspberry Pi was introduced with a simple idea: a small, affordable computer that could bring real computing back into education. Not locked-down tablets or simplified tools, but a machine you could explore, break, and understand.&lt;/p&gt;&#xA;&lt;p&gt;That idea mattered. It still does.&lt;/p&gt;&#xA;&lt;p&gt;But looking at how the Raspberry Pi is used today, it&amp;rsquo;s hard to ignore that something changed along the way. Not because of one bad decision, and not because anyone acted in bad faith, but because the world it entered slowly reshaped what it became.&lt;/p&gt;</description>
     </item>
   </channel>

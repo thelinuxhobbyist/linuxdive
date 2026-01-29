@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux in Our Lives on LinuxDive</title>
-    <link>http://localhost:35031/pillar/</link>
+    <link>https://linuxdive.com/pillar/</link>
     <description>Recent content in Linux in Our Lives on LinuxDive</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:35031/pillar/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://linuxdive.com/pillar/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

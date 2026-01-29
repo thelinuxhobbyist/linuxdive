@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Distro on LinuxDive</title>
-    <link>http://localhost:35031/tags/distro/</link>
+    <link>https://linuxdive.com/tags/distro/</link>
     <description>Recent content in Distro on LinuxDive</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 25 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:35031/tags/distro/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://linuxdive.com/tags/distro/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Stop Obsessing Over Your First Linux Distro – Just Pick One Already!</title>
-      <link>http://localhost:35031/posts/stop-obsessing-over-your-first-linux-distro/</link>
+      <link>https://linuxdive.com/posts/stop-obsessing-over-your-first-linux-distro/</link>
       <pubDate>Sun, 25 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35031/posts/stop-obsessing-over-your-first-linux-distro/</guid>
+      <guid>https://linuxdive.com/posts/stop-obsessing-over-your-first-linux-distro/</guid>
       <description>&lt;p&gt;So, you&amp;rsquo;ve decided to dip your toes into the wide, wild world of Linux. You&amp;rsquo;ve read a few guides, watched some videos, maybe lurked in a subreddit or two, and suddenly your head is spinning with names like Ubuntu, Fedora, Arch, Manjaro, Debian… and let&amp;rsquo;s not even mention the billion flavors in between.&lt;/p&gt;&#xA;&lt;p&gt;And now you&amp;rsquo;re stuck. Paralyzed. Asking yourself, &amp;ldquo;Which distro should I start with?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s the thing: the question itself is a trap. A beautiful, shiny, anxiety-inducing trap. The truth is, the &amp;ldquo;perfect first Linux distro&amp;rdquo; doesn&amp;rsquo;t exist. And obsessing over it? Totally unnecessary.&lt;/p&gt;</description>
     </item>
     <item>
       <title>There&#39;s Nothing Wrong With Distro Hopping</title>
-      <link>http://localhost:35031/posts/theres-nothing-wrong-with-distro-hopping/</link>
+      <link>https://linuxdive.com/posts/theres-nothing-wrong-with-distro-hopping/</link>
       <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35031/posts/theres-nothing-wrong-with-distro-hopping/</guid>
+      <guid>https://linuxdive.com/posts/theres-nothing-wrong-with-distro-hopping/</guid>
       <description>&lt;p&gt;Distro hopping is often treated like a phase Linux users are supposed to grow out of. Something beginners do before they &amp;ldquo;settle down,&amp;rdquo; pick a distribution, and stop reinstalling their system every few months.&lt;/p&gt;&#xA;&lt;p&gt;But honestly? There&amp;rsquo;s nothing wrong with distro hopping.&lt;/p&gt;&#xA;&lt;p&gt;In fact, it&amp;rsquo;s one of the most natural—and most honest—ways to learn Linux.&lt;/p&gt;&#xA;&lt;p&gt;At its core, distro hopping isn&amp;rsquo;t about indecision. It&amp;rsquo;s about curiosity. And curiosity is how people actually understand the Linux world.&lt;/p&gt;</description>
     </item>
   </channel>

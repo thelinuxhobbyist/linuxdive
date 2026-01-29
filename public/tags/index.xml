@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on LinuxDive</title>
-    <link>http://localhost:35031/tags/</link>
+    <link>https://linuxdive.com/tags/</link>
     <description>Recent content in Tags on LinuxDive</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 25 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:35031/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://linuxdive.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Beginners</title>
-      <link>http://localhost:35031/tags/beginners/</link>
+      <link>https://linuxdive.com/tags/beginners/</link>
       <pubDate>Sun, 25 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35031/tags/beginners/</guid>
+      <guid>https://linuxdive.com/tags/beginners/</guid>
       <description></description>
     </item>
     <item>
       <title>Distro</title>
-      <link>http://localhost:35031/tags/distro/</link>
+      <link>https://linuxdive.com/tags/distro/</link>
       <pubDate>Sun, 25 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35031/tags/distro/</guid>
+      <guid>https://linuxdive.com/tags/distro/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>http://localhost:35031/tags/linux/</link>
+      <link>https://linuxdive.com/tags/linux/</link>
       <pubDate>Sun, 25 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35031/tags/linux/</guid>
+      <guid>https://linuxdive.com/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Personal-Computing</title>
-      <link>http://localhost:35031/tags/personal-computing/</link>
+      <link>https://linuxdive.com/tags/personal-computing/</link>
       <pubDate>Sun, 25 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35031/tags/personal-computing/</guid>
+      <guid>https://linuxdive.com/tags/personal-computing/</guid>
       <description></description>
     </item>
     <item>
       <title>Community</title>
-      <link>http://localhost:35031/tags/community/</link>
+      <link>https://linuxdive.com/tags/community/</link>
       <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35031/tags/community/</guid>
+      <guid>https://linuxdive.com/tags/community/</guid>
       <description></description>
     </item>
     <item>
       <title>Gaming</title>
-      <link>http://localhost:35031/tags/gaming/</link>
+      <link>https://linuxdive.com/tags/gaming/</link>
       <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35031/tags/gaming/</guid>
+      <guid>https://linuxdive.com/tags/gaming/</guid>
       <description></description>
     </item>
     <item>
       <title>Education</title>
-      <link>http://localhost:35031/tags/education/</link>
+      <link>https://linuxdive.com/tags/education/</link>
       <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35031/tags/education/</guid>
+      <guid>https://linuxdive.com/tags/education/</guid>
       <description></description>
     </item>
     <item>
       <title>Hardware</title>
-      <link>http://localhost:35031/tags/hardware/</link>
+      <link>https://linuxdive.com/tags/hardware/</link>
       <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35031/tags/hardware/</guid>
+      <guid>https://linuxdive.com/tags/hardware/</guid>
       <description></description>
     </item>
     <item>
       <title>Raspberry-Pi</title>
-      <link>http://localhost:35031/tags/raspberry-pi/</link>
+      <link>https://linuxdive.com/tags/raspberry-pi/</link>
       <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35031/tags/raspberry-pi/</guid>
+      <guid>https://linuxdive.com/tags/raspberry-pi/</guid>
       <description></description>
     </item>
   </channel>
