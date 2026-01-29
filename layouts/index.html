@@ -51,27 +51,38 @@
   </section>
 
   <!-- Recommended Reads Section -->
-  {{ $recommended := where .Site.RegularPages "Params.recommended" true }}
-  {{ if $recommended }}
+  {{ $allPosts := where (where .Site.RegularPages "Section" "posts") "Params.draft" false }}
+  {{ $latestCount := 8 }}
+  {{ $latestPosts := first $latestCount $allPosts }}
+  
+  <!-- Get posts beyond the latest for recommendations -->
+  {{ $recommendationPool := after $latestCount (first 40 $allPosts) }}
+  
+  {{ if $recommendationPool }}
     <section class="recommended-section">
       <h2 class="section-title">Recommended Reads</h2>
       <div class="articles-list">
-        {{ range first 5 $recommended }}
-          <article class="article-item">
-            {{ if .Params.featured_image }}
-              <div class="article-image">
-                <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}">
-              </div>
+        <!-- Use a simple pseudo-random selection based on post index -->
+        {{ range $index, $post := $recommendationPool }}
+          {{ if or (eq (mod $index 2) 0) (eq (mod $index 3) 0) }}
+            {{ if lt $index 6 }}
+              <article class="article-item">
+                {{ if $post.Params.featured_image }}
+                  <div class="article-image">
+                    <img src="{{ $post.Params.featured_image | relURL }}" alt="{{ $post.Title }}">
+                  </div>
+                {{ end }}
+                <div class="article-header">
+                  <h3><a href="{{ $post.RelPermalink }}">{{ $post.Title }}</a></h3>
+                  <time datetime="{{ $post.Date.Format "2006-01-02" }}" class="article-date">
+                    {{ $post.Date.Format "Jan 2, 2006" }}
+                  </time>
+                </div>
+                <p class="article-excerpt">{{ $post.Summary | plainify }}</p>
+                <a href="{{ $post.RelPermalink }}" class="read-link">Read article →</a>
+              </article>
             {{ end }}
-            <div class="article-header">
-              <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-              <time datetime="{{ .Date.Format "2006-01-02" }}" class="article-date">
-                {{ .Date.Format "Jan 2, 2006" }}
-              </time>
-            </div>
-            <p class="article-excerpt">{{ .Summary | plainify }}</p>
-            <a href="{{ .RelPermalink }}" class="read-link">Read article →</a>
-          </article>
+          {{ end }}
         {{ end }}
       </div>
     </section>

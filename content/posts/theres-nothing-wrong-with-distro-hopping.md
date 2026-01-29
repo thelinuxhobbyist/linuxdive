@@ -6,7 +6,6 @@ draft: false
 author: "Neil Cass"
 pillar_category: "distros"
 featured: true
-recommended: true
 featured_image: "https://cdn.linuxdive.com/distro.webp"
 
 tags: ["distro", "linux", "personal-computing", "community"]

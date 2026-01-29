@@ -6,7 +6,6 @@ draft: false
 author: "Neil Cass"
 pillar_category: "distros"
 featured: true
-recommended: true
 featured_image: "https://cdn.linuxdive.com/obsessing.webp"
 
 tags: ["distro", "linux", "beginners", "personal-computing"]

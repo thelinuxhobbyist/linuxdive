@@ -6,7 +6,6 @@ draft: false
 author: "Neil Cass"
 pillar_category: "personal"
 featured: true
-recommended: true
 featured_image: "https://cdn.linuxdive.com/linux-games.webp"
 
 tags: ["linux", "gaming", "community", "personal-computing"]

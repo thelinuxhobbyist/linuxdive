@@ -6,7 +6,6 @@ draft: false
 author: "Neil Cass"
 pillar_category: "hardware"
 featured: true
-recommended: true
 featured_image: "https://cdn.linuxdive.com/pi.webp"
 
 tags: ["hardware", "raspberry-pi", "education", "linux"]
