@@ -2,12 +2,12 @@
 
 /* Root Variables */
 :root {
-  --bg: #0d1117;
-  --text: #e0e0e0;
-  --text-secondary: #a0a0a0;
-  --border: #30363d;
-  --accent: #58a6ff;
-  --accent-hover: #79c0ff;
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --text-secondary: #666666;
+  --border: #e0e0e0;
+  --accent: #0066cc;
+  --accent-hover: #0052a3;
 }
 
 /* Reset & Base */

@@ -68,7 +68,7 @@ Here&rsquo;s the thing: the question itself is a trap. A beautiful, shiny, anxie
     
     if (article && e.target.tagName !== 'A' && e.target.tagName !== 'BUTTON') {
       
-      const link = article.querySelector('h3 a') || article.querySelector('h1 a');
+      let link = article.querySelector('h3 a') || article.querySelector('h1 a') || article.querySelector('a');
       if (link) {
         e.preventDefault();
         window.location.href = link.href;

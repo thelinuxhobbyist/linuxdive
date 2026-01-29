@@ -2,12 +2,12 @@
 
 /* Root Variables */
 :root {
-  --bg: #0d1117;
-  --text: #e0e0e0;
-  --text-secondary: #a0a0a0;
-  --border: #30363d;
-  --accent: #58a6ff;
-  --accent-hover: #79c0ff;
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --text-secondary: #666666;
+  --border: #e0e0e0;
+  --accent: #0066cc;
+  --accent-hover: #0052a3;
 }
 
 /* Reset & Base */
@@ -482,17 +482,13 @@ a:hover {
   padding-bottom: 0;
   border-bottom: none;
   cursor: pointer;
-  transition: opacity 0.2s;
-  display: flex;
-  flex-direction: column;
-}
+    transition: none;
+    display: flex;
+    flex-direction: column;
+  }
 
-.pillar-article:hover {
-  opacity: 0.8;
-}
-
-.pillar-article:last-child {
-  border-bottom: none;
+  .pillar-article:hover {
+    opacity: 1;
   padding-bottom: 0;
 }
 
@@ -727,6 +723,12 @@ a:hover {
     border-bottom: none;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+    transition: none;
+  }
+
+  .article-item:hover {
+    opacity: 1;
   }
 
   .article-image {
@@ -746,6 +748,33 @@ a:hover {
 
   .header-nav {
     padding: 0 1rem;
+  }
+
+  .article-item {
+    transition: none !important;
+  }
+
+  .article-item:hover,
+  .article-item:active {
+    opacity: 1 !important;
+  }
+
+  .pillar-article {
+    transition: none !important;
+  }
+
+  .pillar-article:hover,
+  .pillar-article:active {
+    opacity: 1 !important;
+  }
+
+  .featured-article {
+    transition: none !important;
+  }
+
+  .featured-article:hover,
+  .featured-article:active {
+    opacity: 1 !important;
   }
 
   h1 {
