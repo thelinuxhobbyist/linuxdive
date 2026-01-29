@@ -168,7 +168,7 @@ main {
 .footer-uptime {
   margin: 0;
   font-size: 0.9em;
-  opacity: 0.8;
+  color: #d4d4d4;
 }
 
 .footer-tagline {
@@ -337,6 +337,7 @@ a:hover {
 .recommended-section .article-item {
   padding: 1rem 0;
 }
+
 .articles-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -407,6 +408,214 @@ a:hover {
   color: var(--text-secondary);
   margin-bottom: 1rem;
 }
+
+/* Latest Content Compact Grid Layout */
+.latest-articles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.latest-article-item {
+  padding-bottom: 0;
+  border-bottom: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-article-item:hover {
+  opacity: 0.8;
+}
+
+.latest-article-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.latest-article-image {
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: transparent;
+  margin-bottom: 0.75rem;
+}
+
+.latest-article-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.latest-article-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-article-header {
+  margin-bottom: 0.3rem;
+}
+
+.latest-article-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.latest-article-header h3 a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.latest-article-header h3 a:hover {
+  color: var(--accent);
+}
+
+.latest-article-header .article-date {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 0.2rem;
+}
+
+.latest-article-item .article-excerpt {
+  margin: 0.4rem 0 0;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* View all posts link */
+.latest-view-all {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.view-all-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.view-all-link:hover {
+  color: var(--accent-hover);
+}
+
+/* Fallback for fewer than 2 posts */
+.latest-articles-fallback {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.latest-article-simple {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.latest-article-simple:last-child {
+  border-bottom: none;
+}
+
+.latest-article-simple h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.latest-article-simple h3 a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.latest-article-simple h3 a:hover {
+  color: var(--accent);
+}
+
+.latest-article-simple .article-date {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Mobile adjustments */
+@media (max-width: 1024px) {
+  .latest-articles-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+
+  .latest-articles-grid .latest-article-item:first-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .latest-articles-grid .latest-article-item:nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .latest-articles-grid .latest-article-item:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .latest-articles-grid .latest-article-item:nth-child(4) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .latest-articles-grid .latest-article-item:nth-child(5) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .latest-articles-grid .latest-article-item:nth-child(6) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+
+  .latest-articles-grid .latest-article-item:nth-child(7) {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+
+  .latest-articles-grid .latest-article-item:nth-child(8) {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+}
+
+@media (max-width: 640px) {
+  .latest-articles-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .latest-articles-grid .latest-article-item {
+    grid-column: 1 / 2 !important;
+  }
+
+  .latest-article-image {
+    height: 100px;
+    margin-bottom: 0.5rem;
+  }
+
+  .latest-article-header h3 {
+    font-size: 1rem;
+  }
+
+  .latest-article-item .article-excerpt {
+    display: none;
+  }
+}
+
 
 .article-excerpt {
   display: none;
