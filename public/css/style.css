@@ -227,7 +227,7 @@ a:hover {
 
 /* Links */
 .read-link {
-  display: inline-block;
+  display: none;
   margin-top: 0.5rem;
   font-weight: 500;
 }
@@ -247,22 +247,25 @@ a:hover {
 
 /* Featured Article */
 .featured-section {
-  margin-bottom: 4rem;
-  padding: 2rem;
-  background-color: rgba(88, 166, 255, 0.05);
-  border: 1px solid rgba(88, 166, 255, 0.2);
-  border-radius: 6px;
+  margin-bottom: 5rem;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
 }
 
 .featured-image {
-  margin: -2rem -2rem 2rem -2rem;
-  border-radius: 6px 6px 0 0;
+  margin: 0 0 2.5rem 0;
+  border-radius: 8px;
   overflow: hidden;
+  max-height: 500px;
+  box-shadow: 0 10px 30px rgba(88, 166, 255, 0.15);
 }
 
 .featured-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 
@@ -270,10 +273,48 @@ a:hover {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.featured-article:hover {
+  opacity: 0.85;
 }
 
 .featured-article h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.featured-article .article-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.featured-article .article-excerpt {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+.featured-article .read-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent);
+  color: var(--bg);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.featured-article .read-link:hover {
+  background-color: var(--accent-hover);
 }
 
 /* Latest Content Section */
@@ -305,6 +346,12 @@ a:hover {
 .article-item {
   padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.article-item:hover {
+  opacity: 0.8;
 }
 
 .article-item:last-child {
@@ -335,6 +382,7 @@ a:hover {
 
 .article-header h3 {
   margin: 0;
+  font-size: 1.5rem;
 }
 
 .article-header h3 a {
@@ -490,6 +538,7 @@ a:hover {
 
 .post-header h1 {
   margin-bottom: 0.5rem;
+  font-size: 2.2rem;
 }
 
 .post-date {
@@ -676,7 +725,9 @@ a:hover {
   h1 {
     font-size: 1.5rem;
   }
-
+  .article-header h3 {
+    font-size: 1.3rem;
+  }
   .section-title {
     font-size: 1.3rem;
   }

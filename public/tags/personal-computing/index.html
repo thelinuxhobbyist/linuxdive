@@ -16,6 +16,7 @@
   <title>Personal-Computing - LinuxDive</title>
   <meta name="description" content="Editorial Linux site exploring impact on government, education, business, personal computing, and community.">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
   <header class="site-header">
@@ -24,9 +25,8 @@
       <a href="/">LinuxDive</a>
     </div>
     <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span class="material-icons" id="menuIcon">menu</span>
+      <span class="material-icons" id="closeIcon" style="display: none;">close</span>
     </button>
     <div class="nav-links" id="navLinks">
       <a href="/">Home</a>
@@ -35,15 +35,27 @@
   </nav>
 </header>
 <script>
-  document.getElementById('mobileMenuToggle').addEventListener('click', function() {
-    document.getElementById('navLinks').classList.toggle('active');
-    this.classList.toggle('active');
+  const toggle = document.getElementById('mobileMenuToggle');
+  const navLinks = document.getElementById('navLinks');
+  const menuIcon = document.getElementById('menuIcon');
+  const closeIcon = document.getElementById('closeIcon');
+  
+  toggle.addEventListener('click', function() {
+    navLinks.classList.toggle('active');
+    if (navLinks.classList.contains('active')) {
+      menuIcon.style.display = 'none';
+      closeIcon.style.display = 'block';
+    } else {
+      menuIcon.style.display = 'block';
+      closeIcon.style.display = 'none';
+    }
   });
   
   document.querySelectorAll('#navLinks a').forEach(link => {
     link.addEventListener('click', function() {
-      document.getElementById('navLinks').classList.remove('active');
-      document.getElementById('mobileMenuToggle').classList.remove('active');
+      navLinks.classList.remove('active');
+      menuIcon.style.display = 'block';
+      closeIcon.style.display = 'none';
     });
   });
 </script>
