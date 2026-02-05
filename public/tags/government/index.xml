@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Government on LinuxDive</title>
+    <title>Government on The Fun, Unexpected Side of Linux</title>
     <link>http://localhost:1313/tags/government/</link>
-    <description>Recent content in Government on LinuxDive</description>
+    <description>Recent content in Government on The Fun, Unexpected Side of Linux</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/government/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How Linux Powers Government Infrastructure</title>
-      <link>http://localhost:1313/posts/government-linux-adoption/</link>
-      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/government-linux-adoption/</guid>
-      <description>&lt;p&gt;Governments worldwide have increasingly adopted Linux as a cornerstone of their digital infrastructure. From critical systems that manage citizen services to national defense initiatives, Linux provides the stability, security, and transparency that public institutions require.&lt;/p&gt;&#xA;&lt;h2 id=&#34;security-and-transparency&#34;&gt;Security and Transparency&lt;/h2&gt;&#xA;&lt;p&gt;Government agencies need to ensure that their systems are secure and auditable. Linux&amp;rsquo;s open-source nature allows governments to inspect the code themselves, eliminating the black-box problem inherent in proprietary systems. This transparency is crucial for citizens who deserve to know how their government&amp;rsquo;s technology works.&lt;/p&gt;</description>
+      <title>Government Investment in Open Source Infrastructure</title>
+      <link>http://localhost:1313/society/government-investment-in-open-source/</link>
+      <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/society/government-investment-in-open-source/</guid>
+      <description>&lt;p&gt;Governments around the world are recognizing the strategic importance of open source software for their digital infrastructure.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

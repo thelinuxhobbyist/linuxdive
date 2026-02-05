@@ -1,83 +1,167 @@
 {{ define "main" }}
 <div class="homepage">
-  <!-- Featured Article Section -->
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">Linux Beyond the Terminal</h1>
+      <p class="hero-subtitle">Stories about how Linux is quietly reshaping government, work, education, and everyday life.</p>
+      <p class="hero-description">LinuxDive explores Linux as a cultural, institutional, and economic force—not just code, but the decisions, communities, and moments that prove it matters.</p>
+    </div>
+  </section>
+
+  <!-- Primary Featured Article -->
   {{ $featured := where .Site.RegularPages "Params.featured" true }}
   {{ if $featured }}
     {{ with index $featured 0 }}
-    <section class="featured-section">
-      <h2 class="section-title">Featured</h2>
-      <article class="featured-article">
+    <section class="primary-featured">
+      <article class="featured-article-main">
         {{ if .Params.featured_image }}
-          <div class="featured-image">
+          <div class="featured-image-large">
             <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}">
           </div>
         {{ end }}
-        <h1>{{ .Title }}</h1>
-        <div class="article-meta">
-          <time datetime="{{ .Date.Format "2006-01-02" }}">
-            {{ .Date.Format "January 2, 2006" }}
-          </time>
+        <div class="featured-content-main">
+          <h2>{{ .Title }}</h2>
+          <div class="article-meta">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">
+              {{ .Date.Format "January 2, 2006" }}
+            </time>
+            {{ if .Params.author }}
+              <span class="author">By {{ .Params.author }}</span>
+            {{ end }}
+          </div>
+          <p class="article-excerpt">{{ .Summary | plainify }}</p>
+          <a href="{{ .RelPermalink }}" class="read-link">Read article →</a>
         </div>
-        <p class="article-excerpt">{{ .Summary | plainify }}</p>
-        <a href="{{ .RelPermalink }}" class="read-link">Read article →</a>
       </article>
     </section>
     {{ end }}
   {{ end }}
 
-  <!-- Latest Content Section -->
-  <section class="latest-section">
-    <h2 class="section-title">Latest Content</h2>
-    <div class="articles-list">
-      {{ $posts := where (where .Site.RegularPages "Section" "posts") "Params.draft" false }}
-      {{ range first 8 $posts }}
-        <article class="article-item">
-          {{ if .Params.featured_image }}
-            <div class="article-image">
-              <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}">
-            </div>
-          {{ end }}
-          <div class="article-header">
-            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-            <time datetime="{{ .Date.Format "2006-01-02" }}" class="article-date">
-              {{ .Date.Format "Jan 2, 2006" }}
-            </time>
-          </div>
-          <p class="article-excerpt">{{ .Summary | plainify }}</p>
-          <a href="{{ .RelPermalink }}" class="read-link">Read article →</a>
-        </article>
-      {{ end }}
-    </div>
-  </section>
-  </section>
-
-  <!-- Recommended Reads Section -->
-  {{ $allPosts := where (where .Site.RegularPages "Section" "posts") "Params.draft" false }}
-  {{ $latestPosts := first 8 $allPosts }}
+  <!-- Section Preview Blocks -->
   
-  {{ if $latestPosts }}
-    <section class="recommended-section">
-      <h2 class="section-title">Recommended Reads</h2>
-      <div class="articles-list">
-        {{ range $latestPosts }}
-          <article class="article-item">
-            {{ if .Params.featured_image }}
-              <div class="article-image">
-                <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}">
+  <!-- Society Section -->
+  {{ with .Site.GetPage "/society" }}
+    {{ $articles := where (where .Site.RegularPages "Section" "society") "Params.draft" false }}
+    {{ if $articles }}
+      <section class="section-preview">
+        <div class="section-header">
+          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          <p class="section-preview-desc">{{ .Params.description }}</p>
+        </div>
+        <div class="section-preview-articles">
+          {{ range first 6 $articles }}
+            <article class="preview-article-card">
+              {{ if .Params.featured_image }}
+                <div class="preview-image">
+                  <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}">
+                </div>
+              {{ end }}
+              <div class="preview-content">
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                <time datetime="{{ .Date.Format "2006-01-02" }}" class="preview-date">
+                  {{ .Date.Format "Jan 2, 2006" }}
+                </time>
               </div>
-            {{ end }}
-            <div class="article-header">
-              <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-              <time datetime="{{ .Date.Format "2006-01-02" }}" class="article-date">
-                {{ .Date.Format "Jan 2, 2006" }}
-              </time>
-            </div>
-            <p class="article-excerpt">{{ .Summary | plainify }}</p>
-            <a href="{{ .RelPermalink }}" class="read-link">Read article →</a>
-          </article>
-        {{ end }}
-      </div>
-    </section>
+            </article>
+          {{ end }}
+        </div>
+        <a href="{{ .RelPermalink }}" class="view-all-link">View all articles →</a>
+      </section>
+    {{ end }}
+  {{ end }}
+
+  <!-- Work Section -->
+  {{ with .Site.GetPage "/work" }}
+    {{ $articles := where (where .Site.RegularPages "Section" "work") "Params.draft" false }}
+    {{ if $articles }}
+      <section class="section-preview">
+        <div class="section-header">
+          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          <p class="section-preview-desc">{{ .Params.description }}</p>
+        </div>
+        <div class="section-preview-articles">
+          {{ range first 6 $articles }}
+            <article class="preview-article-card">
+              {{ if .Params.featured_image }}
+                <div class="preview-image">
+                  <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}">
+                </div>
+              {{ end }}
+              <div class="preview-content">
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                <time datetime="{{ .Date.Format "2006-01-02" }}" class="preview-date">
+                  {{ .Date.Format "Jan 2, 2006" }}
+                </time>
+              </div>
+            </article>
+          {{ end }}
+        </div>
+        <a href="{{ .RelPermalink }}" class="view-all-link">View all articles →</a>
+      </section>
+    {{ end }}
+  {{ end }}
+
+  <!-- Culture Section -->
+  {{ with .Site.GetPage "/culture" }}
+    {{ $articles := where (where .Site.RegularPages "Section" "culture") "Params.draft" false }}
+    {{ if $articles }}
+      <section class="section-preview">
+        <div class="section-header">
+          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          <p class="section-preview-desc">{{ .Params.description }}</p>
+        </div>
+        <div class="section-preview-articles">
+          {{ range first 6 $articles }}
+            <article class="preview-article-card">
+              {{ if .Params.featured_image }}
+                <div class="preview-image">
+                  <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}">
+                </div>
+              {{ end }}
+              <div class="preview-content">
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                <time datetime="{{ .Date.Format "2006-01-02" }}" class="preview-date">
+                  {{ .Date.Format "Jan 2, 2006" }}
+                </time>
+              </div>
+            </article>
+          {{ end }}
+        </div>
+        <a href="{{ .RelPermalink }}" class="view-all-link">View all articles →</a>
+      </section>
+    {{ end }}
+  {{ end }}
+
+  <!-- Everyday Section -->
+  {{ with .Site.GetPage "/everyday" }}
+    {{ $articles := where (where .Site.RegularPages "Section" "everyday") "Params.draft" false }}
+    {{ if $articles }}
+      <section class="section-preview">
+        <div class="section-header">
+          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          <p class="section-preview-desc">{{ .Params.description }}</p>
+        </div>
+        <div class="section-preview-articles">
+          {{ range first 6 $articles }}
+            <article class="preview-article-card">
+              {{ if .Params.featured_image }}
+                <div class="preview-image">
+                  <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}">
+                </div>
+              {{ end }}
+              <div class="preview-content">
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                <time datetime="{{ .Date.Format "2006-01-02" }}" class="preview-date">
+                  {{ .Date.Format "Jan 2, 2006" }}
+                </time>
+              </div>
+            </article>
+          {{ end }}
+        </div>
+        <a href="{{ .RelPermalink }}" class="view-all-link">View all articles →</a>
+      </section>
+    {{ end }}
   {{ end }}
 </div>
 {{ end }}

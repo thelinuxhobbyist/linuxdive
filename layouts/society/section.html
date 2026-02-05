@@ -1,0 +1,39 @@
+{{ define "main" }}
+<div class="section-page">
+  <div class="section-intro">
+    <h1>{{ .Title }}</h1>
+    <p class="section-description">{{ .Params.description }}</p>
+    <div class="section-content">
+      {{ .Content }}
+    </div>
+  </div>
+
+  <div class="section-articles">
+    {{ $section := .Section }}
+    {{ $articles := where (where .Site.RegularPages "Section" $section) "Params.draft" false }}
+    {{ $articles = where $articles "Type" "ne" "section" }}
+    
+    {{ if $articles }}
+      <div class="articles-grid">
+        {{ range $articles }}
+          <article class="section-article-card">
+            {{ if .Params.featured_image }}
+              <div class="card-image">
+                <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}">
+              </div>
+            {{ end }}
+            <div class="card-content">
+              <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+              <time datetime="{{ .Date.Format "2006-01-02" }}" class="card-date">
+                {{ .Date.Format "Jan 2, 2006" }}
+              </time>
+              <p class="card-excerpt">{{ .Summary | plainify | truncate 150 }}</p>
+              <a href="{{ .RelPermalink }}" class="card-link">Read →</a>
+            </div>
+          </article>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

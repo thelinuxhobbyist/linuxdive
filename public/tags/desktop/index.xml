@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Desktop on LinuxDive</title>
+    <title>Desktop on The Fun, Unexpected Side of Linux</title>
     <link>http://localhost:1313/tags/desktop/</link>
-    <description>Recent content in Desktop on LinuxDive</description>
+    <description>Recent content in Desktop on The Fun, Unexpected Side of Linux</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/desktop/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Linux on the Desktop: A Practical Guide for Everyday Users</title>
-      <link>http://localhost:1313/posts/linux-personal-computing/</link>
-      <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/linux-personal-computing/</guid>
-      <description>&lt;p&gt;For decades, Linux was consigned to servers and developer machines. But desktop Linux has matured into a legitimate choice for everyday computing. Modern distributions combine ease of use with the power that motivated users expect.&lt;/p&gt;&#xA;&lt;h2 id=&#34;distributions-for-everyone&#34;&gt;Distributions for Everyone&lt;/h2&gt;&#xA;&lt;p&gt;Today&amp;rsquo;s Linux comes in flavors for every user:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ubuntu&lt;/strong&gt; offers a polished experience comparable to mainstream operating systems&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Linux Mint&lt;/strong&gt; emphasizes ease of use and stability&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Fedora&lt;/strong&gt; serves users who want cutting-edge software&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Elementary OS&lt;/strong&gt; provides a focus on design and simplicity&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;software-availability&#34;&gt;Software Availability&lt;/h2&gt;&#xA;&lt;p&gt;The stereotype of limited software on Linux no longer holds. Professional applications exist across creative fields:&lt;/p&gt;</description>
+      <title>Linux Desktop in 2026: The Year of Mainstream Adoption</title>
+      <link>http://localhost:1313/everyday/linux-desktop-mainstream/</link>
+      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/everyday/linux-desktop-mainstream/</guid>
+      <description>&lt;p&gt;Desktop Linux has finally reached a level of polish and usability that appeals to mainstream users.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

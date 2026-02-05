@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Enterprise on LinuxDive</title>
+    <title>Enterprise on The Fun, Unexpected Side of Linux</title>
     <link>http://localhost:1313/tags/enterprise/</link>
-    <description>Recent content in Enterprise on LinuxDive</description>
+    <description>Recent content in Enterprise on The Fun, Unexpected Side of Linux</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/enterprise/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Why Banks Rely on Linux for Core Banking Infrastructure</title>
-      <link>http://localhost:1313/posts/banking-linux-infrastructure/</link>
-      <pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/banking-linux-infrastructure/</guid>
-      <description>&lt;p&gt;Behind every ATM transaction, every online banking session, and every interbank transfer lies Linux. The financial industry has made Linux a fundamental pillar of its technology infrastructure, and for good reason.&lt;/p&gt;&#xA;&lt;h2 id=&#34;reliability-and-uptime&#34;&gt;Reliability and Uptime&lt;/h2&gt;&#xA;&lt;p&gt;Banking systems cannot afford downtime. Linux&amp;rsquo;s stability has made it the platform of choice for critical financial infrastructure. Major banks run Linux on everything from mainframe-equivalent systems to edge servers processing millions of transactions per second.&lt;/p&gt;</description>
+      <title>Enterprise Linux Deployment at Scale</title>
+      <link>http://localhost:1313/work/enterprise-linux-deployment/</link>
+      <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/work/enterprise-linux-deployment/</guid>
+      <description>&lt;p&gt;Major corporations are moving their entire infrastructure to Linux-based systems.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
