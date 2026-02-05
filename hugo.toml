@@ -1,10 +1,10 @@
 baseURL = "https://linuxdive.com"
 languageCode = "en-us"
-title = "LinuxDive"
+title = "The Fun, Unexpected Side of Linux"
 
 [params]
   siteName = "LinuxDive"
-  siteDescription = "Editorial Linux site exploring impact on government, education, business, personal computing, and community."
+  siteDescription = "Linux Dive covers the coolest uses of Linux in business, education, gaming, and beyond. From home projects to big industry, discover the fun side of Linux."
 
 [markup.highlight]
   codeFences = true
