@@ -1,36 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on The Fun, Unexpected Side of Linux</title><link>https://linuxdive.com/pages/</link><description>Recent content in Pages on The Fun, Unexpected Side of Linux</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 29 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://linuxdive.com/pages/index.xml" rel="self" type="application/rss+xml"/><item><title>Contact</title><link>https://linuxdive.com/contact/</link><pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate><guid>https://linuxdive.com/contact/</guid><description>&lt;h2 id="get-in-touch"&gt;Get in Touch&lt;/h2&gt;
-&lt;p&gt;We&amp;rsquo;d love to hear from you! Whether you have feedback, questions, or just want to chat about Linux, feel free to reach out.&lt;/p&gt;
-&lt;h3 id="email"&gt;Email&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="mailto:contact@linuxdive.com"&gt;contact@linuxdive.com&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;We typically respond within 24-48 hours.&lt;/p&gt;
-&lt;h3 id="what-were-open-to"&gt;What We&amp;rsquo;re Open To&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Questions about Linux and distro recommendations&lt;/li&gt;
-&lt;li&gt;Feedback on articles and content&lt;/li&gt;
-&lt;li&gt;Guest contributions or collaboration ideas&lt;/li&gt;
-&lt;li&gt;Bug reports or technical issues with the site&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="response-times"&gt;Response Times&lt;/h3&gt;
-&lt;p&gt;Due to the volume of emails, we may not be able to respond to every message, but we read and appreciate all feedback.&lt;/p&gt;</description></item><item><title>Privacy Policy</title><link>https://linuxdive.com/privacy/</link><pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate><guid>https://linuxdive.com/privacy/</guid><description>&lt;h2 id="privacy-policy"&gt;Privacy Policy&lt;/h2&gt;
-&lt;p&gt;This Privacy Policy explains how LinuxDive.com collects, uses, and protects your information.&lt;/p&gt;
-&lt;h3 id="information-we-collect"&gt;Information We Collect&lt;/h3&gt;
-&lt;p&gt;We do not collect personal information unless you voluntarily provide it to us through contact forms or other interactions.&lt;/p&gt;
-&lt;h3 id="cookies--tracking"&gt;Cookies &amp;amp; Tracking&lt;/h3&gt;
-&lt;p&gt;LinuxDive.com does not use cookies or tracking technologies. We respect your privacy and do not monitor your browsing behavior.&lt;/p&gt;
-&lt;h3 id="third-party-services"&gt;Third-Party Services&lt;/h3&gt;
-&lt;p&gt;We do not share your data with third-party advertisers or analytics services.&lt;/p&gt;</description></item><item><title>Terms of Service</title><link>https://linuxdive.com/terms/</link><pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate><guid>https://linuxdive.com/terms/</guid><description>&lt;h2 id="terms-of-service"&gt;Terms of Service&lt;/h2&gt;
-&lt;p&gt;Welcome to LinuxDive.com. By accessing and using this website, you agree to be bound by these terms.&lt;/p&gt;
-&lt;h3 id="content-license"&gt;Content License&lt;/h3&gt;
-&lt;p&gt;All content on LinuxDive.com, including text, images, and design, is the property of LinuxDive or its content creators. You may view and share content for personal, non-commercial purposes.&lt;/p&gt;
-&lt;h3 id="acceptable-use"&gt;Acceptable Use&lt;/h3&gt;
-&lt;p&gt;You agree not to:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Reproduce, distribute, or transmit content without permission&lt;/li&gt;
-&lt;li&gt;Attempt to gain unauthorized access to the site&lt;/li&gt;
-&lt;li&gt;Engage in any form of harassment or abuse&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="disclaimer"&gt;Disclaimer&lt;/h3&gt;
-&lt;p&gt;The content on LinuxDive.com is provided &amp;ldquo;as is&amp;rdquo; without warranties. We do not guarantee accuracy or completeness of information related to Linux, distros, or other technical topics.&lt;/p&gt;</description></item><item><title>About</title><link>https://linuxdive.com/about/</link><pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate><guid>https://linuxdive.com/about/</guid><description>&lt;p&gt;LinuxDive is an editorial publication exploring Linux&amp;rsquo;s impact on modern society and technology.&lt;/p&gt;
-&lt;p&gt;We believe that understanding how Linux shapes government, education, business, personal computing, and open source communities is essential for anyone interested in technology&amp;rsquo;s future.&lt;/p&gt;
-&lt;p&gt;Our articles are written with depth and care, exploring not just the technical details but the human and organizational dimensions of Linux adoption and use.&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;re committed to independent, thoughtful journalism about technology that matters.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on The Fun, Unexpected Side of Linux</title>
+    <link>http://localhost:1313/pages/</link>
+    <description>Recent content in Pages on The Fun, Unexpected Side of Linux</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;h2 id=&#34;get-in-touch&#34;&gt;Get in Touch&lt;/h2&gt;&#xA;&lt;p&gt;We&amp;rsquo;d love to hear from you! Whether you have feedback, questions, or just want to chat about Linux, feel free to reach out.&lt;/p&gt;&#xA;&lt;h3 id=&#34;email&#34;&gt;Email&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;mailto:contact@linuxdive.com&#34;&gt;contact@linuxdive.com&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;We typically respond within 24-48 hours.&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-were-open-to&#34;&gt;What We&amp;rsquo;re Open To&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Questions about Linux and distro recommendations&lt;/li&gt;&#xA;&lt;li&gt;Feedback on articles and content&lt;/li&gt;&#xA;&lt;li&gt;Guest contributions or collaboration ideas&lt;/li&gt;&#xA;&lt;li&gt;Bug reports or technical issues with the site&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;response-times&#34;&gt;Response Times&lt;/h3&gt;&#xA;&lt;p&gt;Due to the volume of emails, we may not be able to respond to every message, but we read and appreciate all feedback.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Privacy Policy</title>
+      <link>http://localhost:1313/privacy/</link>
+      <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/privacy/</guid>
+      <description>&lt;h2 id=&#34;privacy-policy&#34;&gt;Privacy Policy&lt;/h2&gt;&#xA;&lt;p&gt;This Privacy Policy explains how LinuxDive.com collects, uses, and protects your information.&lt;/p&gt;&#xA;&lt;h3 id=&#34;information-we-collect&#34;&gt;Information We Collect&lt;/h3&gt;&#xA;&lt;p&gt;We do not collect personal information unless you voluntarily provide it to us through contact forms or other interactions.&lt;/p&gt;&#xA;&lt;h3 id=&#34;cookies--tracking&#34;&gt;Cookies &amp;amp; Tracking&lt;/h3&gt;&#xA;&lt;p&gt;LinuxDive.com does not use cookies or tracking technologies. We respect your privacy and do not monitor your browsing behavior.&lt;/p&gt;&#xA;&lt;h3 id=&#34;third-party-services&#34;&gt;Third-Party Services&lt;/h3&gt;&#xA;&lt;p&gt;We do not share your data with third-party advertisers or analytics services.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Terms of Service</title>
+      <link>http://localhost:1313/terms/</link>
+      <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/terms/</guid>
+      <description>&lt;h2 id=&#34;terms-of-service&#34;&gt;Terms of Service&lt;/h2&gt;&#xA;&lt;p&gt;Welcome to LinuxDive.com. By accessing and using this website, you agree to be bound by these terms.&lt;/p&gt;&#xA;&lt;h3 id=&#34;content-license&#34;&gt;Content License&lt;/h3&gt;&#xA;&lt;p&gt;All content on LinuxDive.com, including text, images, and design, is the property of LinuxDive or its content creators. You may view and share content for personal, non-commercial purposes.&lt;/p&gt;&#xA;&lt;h3 id=&#34;acceptable-use&#34;&gt;Acceptable Use&lt;/h3&gt;&#xA;&lt;p&gt;You agree not to:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Reproduce, distribute, or transmit content without permission&lt;/li&gt;&#xA;&lt;li&gt;Attempt to gain unauthorized access to the site&lt;/li&gt;&#xA;&lt;li&gt;Engage in any form of harassment or abuse&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h3&gt;&#xA;&lt;p&gt;The content on LinuxDive.com is provided &amp;ldquo;as is&amp;rdquo; without warranties. We do not guarantee accuracy or completeness of information related to Linux, distros, or other technical topics.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;LinuxDive is an editorial publication exploring Linux&amp;rsquo;s impact on modern society and technology.&lt;/p&gt;&#xA;&lt;p&gt;We believe that understanding how Linux shapes government, education, business, personal computing, and open source communities is essential for anyone interested in technology&amp;rsquo;s future.&lt;/p&gt;&#xA;&lt;p&gt;Our articles are written with depth and care, exploring not just the technical details but the human and organizational dimensions of Linux adoption and use.&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;re committed to independent, thoughtful journalism about technology that matters.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

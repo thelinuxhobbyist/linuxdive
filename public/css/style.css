@@ -54,10 +54,20 @@ body {
   font-weight: 700;
   color: var(--text);
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .nav-brand a:hover {
   color: var(--accent);
+}
+
+.nav-brand .logo {
+  height: 90px;
+  width: auto;
+  display: inline-block;
+  max-width: 300px;
+  object-fit: contain;
 }
 
 .nav-links {

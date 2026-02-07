@@ -1,18 +1,173 @@
-<!doctype html><html lang=en><head><script async src="https://www.googletagmanager.com/gtag/js?id=G-FB2GJWT21S"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-FB2GJWT21S")</script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Linux in Our Lives - The Fun, Unexpected Side of Linux</title><meta name=description content="This section collects all our editorial content exploring Linux&rsquo;s impact across five key areas: government & policy, education & learning, enterprise & business, personal computing, and community & open source. Browse by category below or explore all articles at once."><link rel=stylesheet href=/css/style.css><link rel=stylesheet href="https://fonts.googleapis.com/icon?family=Material+Icons"></head><body><header class=site-header><nav class=header-nav><div class=nav-brand><a href=/>LinuxDive</a></div><button class=mobile-menu-toggle id=mobileMenuToggle aria-label="Toggle navigation menu">
-<span class=material-icons id=menuIcon>menu</span>
-<span class=material-icons id=closeIcon style=display:none>close</span></button><div class=nav-links id=navLinks><a href=/>Home</a>
-<a href=/society/>Society</a>
-<a href=/work/>Work</a>
-<a href=/culture/>Culture</a>
-<a href=/everyday/>Everyday</a></div></nav></header><script>const toggle=document.getElementById("mobileMenuToggle"),navLinks=document.getElementById("navLinks"),menuIcon=document.getElementById("menuIcon"),closeIcon=document.getElementById("closeIcon");toggle.addEventListener("click",function(){navLinks.classList.toggle("active"),navLinks.classList.contains("active")?(menuIcon.style.display="none",closeIcon.style.display="block"):(menuIcon.style.display="block",closeIcon.style.display="none")}),document.querySelectorAll("#navLinks a").forEach(e=>{e.addEventListener("click",function(){navLinks.classList.remove("active"),menuIcon.style.display="block",closeIcon.style.display="none"})}),document.addEventListener("click",function(e){let t=e.target.closest(".article-item, .pillar-article, .featured-article");if(t&&e.target.tagName!=="A"&&e.target.tagName!=="BUTTON"){let n=t.querySelector("h3 a")||t.querySelector("h1 a")||t.querySelector("a");n&&(e.preventDefault(),window.location.href=n.href)}})</script><main><section class=posts-section><h1>Linux in Our Lives</h1><div class=articles-list><article class=article-item><div class=article-header><h3><a href=/posts/stop-obsessing-over-your-first-linux-distro/>Stop Obsessing Over Your First Linux Distro – Just Pick One Already!</a></h3><time datetime=2026-01-25 class=article-date>Jan 25, 2026</time></div><p class=article-excerpt>So, you&rsquo;ve decided to dip your toes into the wide, wild world of Linux. You&rsquo;ve read a few guides, watched some videos, maybe lurked in a subreddit or two, and suddenly your head is spinning with names like Ubuntu, Fedora, Arch, Manjaro, Debian… and let&rsquo;s not even mention the billion flavors in between.
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FB2GJWT21S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FB2GJWT21S');
+  </script>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linux in Our Lives - The Fun, Unexpected Side of Linux</title>
+  <meta name="description" content="This section collects all our editorial content exploring Linux&rsquo;s impact across five key areas: government &amp; policy, education &amp; learning, enterprise &amp; business, personal computing, and community &amp; open source. Browse by category below or explore all articles at once.">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <header class="site-header">
+  <nav class="header-nav">
+    <div class="nav-brand">
+      <a href="/"><img src="/images/LinuxDive_logoV2.svg" alt="LinuxDive" class="logo"></a>
+    </div>
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+      <span class="material-icons" id="menuIcon">menu</span>
+      <span class="material-icons" id="closeIcon" style="display: none;">close</span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="/">Home</a>
+      <a href="/society/">Society</a>
+      <a href="/work/">Work</a>
+      <a href="/culture/">Culture</a>
+      <a href="/everyday/">Everyday</a>
+    </div>
+  </nav>
+</header>
+<script>
+  const toggle = document.getElementById('mobileMenuToggle');
+  const navLinks = document.getElementById('navLinks');
+  const menuIcon = document.getElementById('menuIcon');
+  const closeIcon = document.getElementById('closeIcon');
+  
+  toggle.addEventListener('click', function() {
+    navLinks.classList.toggle('active');
+    if (navLinks.classList.contains('active')) {
+      menuIcon.style.display = 'none';
+      closeIcon.style.display = 'block';
+    } else {
+      menuIcon.style.display = 'block';
+      closeIcon.style.display = 'none';
+    }
+  });
+  
+  document.querySelectorAll('#navLinks a').forEach(link => {
+    link.addEventListener('click', function() {
+      navLinks.classList.remove('active');
+      menuIcon.style.display = 'block';
+      closeIcon.style.display = 'none';
+    });
+  });
+  
+  
+  document.addEventListener('click', function(e) {
+    
+    let article = e.target.closest('.article-item, .pillar-article, .featured-article');
+    
+    if (article && e.target.tagName !== 'A' && e.target.tagName !== 'BUTTON') {
+      
+      let link = article.querySelector('h3 a') || article.querySelector('h1 a') || article.querySelector('a');
+      if (link) {
+        e.preventDefault();
+        window.location.href = link.href;
+      }
+    }
+  });
+</script>
+
+  
+  <main>
+    
+<section class="posts-section">
+  <h1>Linux in Our Lives</h1>
+  <div class="articles-list">
+    
+      <article class="article-item">
+        <div class="article-header">
+          <h3><a href="/posts/stop-obsessing-over-your-first-linux-distro/">Stop Obsessing Over Your First Linux Distro – Just Pick One Already!</a></h3>
+          <time datetime="2026-01-25" class="article-date">
+            Jan 25, 2026
+          </time>
+        </div>
+        <p class="article-excerpt">So, you&rsquo;ve decided to dip your toes into the wide, wild world of Linux. You&rsquo;ve read a few guides, watched some videos, maybe lurked in a subreddit or two, and suddenly your head is spinning with names like Ubuntu, Fedora, Arch, Manjaro, Debian… and let&rsquo;s not even mention the billion flavors in between.
 And now you&rsquo;re stuck. Paralyzed. Asking yourself, &ldquo;Which distro should I start with?&rdquo;
-Here&rsquo;s the thing: the question itself is a trap. A beautiful, shiny, anxiety-inducing trap. The truth is, the &ldquo;perfect first Linux distro&rdquo; doesn&rsquo;t exist. And obsessing over it? Totally unnecessary.</p><a href=/posts/stop-obsessing-over-your-first-linux-distro/ class=read-link>Read article →</a></article><article class=article-item><div class=article-header><h3><a href=/posts/when-games-started-working-linux-got-new-users/>When Games Started Working, Linux Got New Users</a></h3><time datetime=2026-01-24 class=article-date>Jan 24, 2026</time></div><p class=article-excerpt>Gaming on Linux Was Never Simple For years, gaming on Linux existed in a kind of tolerated contradiction. It was possible, but it never felt entirely stable. Some titles ran without issue, while others required workarounds or special settings. Updates sometimes broke things in unexpected ways, and new releases often introduced uncertainty. Playing games on Linux was never impossible, but it was never entirely predictable either.
-This shaped the kind of people who used Linux for gaming. It favored patience, curiosity, and a willingness to tolerate friction. Gaming wasn&rsquo;t the reason most people chose Linux, but it was something they accommodated. Recommending Linux to someone who cared about games usually came with a pause, a softening, or a long list of exceptions. People didn&rsquo;t just say yes; they said mostly.</p><a href=/posts/when-games-started-working-linux-got-new-users/ class=read-link>Read article →</a></article><article class=article-item><div class=article-header><h3><a href=/posts/the-raspberry-pi-outgrew-its-original-promise/>The Raspberry Pi Outgrew Its Original Promise</a></h3><time datetime=2026-01-21 class=article-date>Jan 21, 2026</time></div><p class=article-excerpt>The Raspberry Pi was introduced with a simple idea: a small, affordable computer that could bring real computing back into education. Not locked-down tablets or simplified tools, but a machine you could explore, break, and understand.
+Here&rsquo;s the thing: the question itself is a trap. A beautiful, shiny, anxiety-inducing trap. The truth is, the &ldquo;perfect first Linux distro&rdquo; doesn&rsquo;t exist. And obsessing over it? Totally unnecessary.
+</p>
+        <a href="/posts/stop-obsessing-over-your-first-linux-distro/" class="read-link">Read article →</a>
+      </article>
+    
+      <article class="article-item">
+        <div class="article-header">
+          <h3><a href="/posts/when-games-started-working-linux-got-new-users/">When Games Started Working, Linux Got New Users</a></h3>
+          <time datetime="2026-01-24" class="article-date">
+            Jan 24, 2026
+          </time>
+        </div>
+        <p class="article-excerpt">Gaming on Linux Was Never Simple For years, gaming on Linux existed in a kind of tolerated contradiction. It was possible, but it never felt entirely stable. Some titles ran without issue, while others required workarounds or special settings. Updates sometimes broke things in unexpected ways, and new releases often introduced uncertainty. Playing games on Linux was never impossible, but it was never entirely predictable either.
+This shaped the kind of people who used Linux for gaming. It favored patience, curiosity, and a willingness to tolerate friction. Gaming wasn&rsquo;t the reason most people chose Linux, but it was something they accommodated. Recommending Linux to someone who cared about games usually came with a pause, a softening, or a long list of exceptions. People didn&rsquo;t just say yes; they said mostly.
+</p>
+        <a href="/posts/when-games-started-working-linux-got-new-users/" class="read-link">Read article →</a>
+      </article>
+    
+      <article class="article-item">
+        <div class="article-header">
+          <h3><a href="/posts/the-raspberry-pi-outgrew-its-original-promise/">The Raspberry Pi Outgrew Its Original Promise</a></h3>
+          <time datetime="2026-01-21" class="article-date">
+            Jan 21, 2026
+          </time>
+        </div>
+        <p class="article-excerpt">The Raspberry Pi was introduced with a simple idea: a small, affordable computer that could bring real computing back into education. Not locked-down tablets or simplified tools, but a machine you could explore, break, and understand.
 That idea mattered. It still does.
-But looking at how the Raspberry Pi is used today, it&rsquo;s hard to ignore that something changed along the way. Not because of one bad decision, and not because anyone acted in bad faith, but because the world it entered slowly reshaped what it became.</p><a href=/posts/the-raspberry-pi-outgrew-its-original-promise/ class=read-link>Read article →</a></article><article class=article-item><div class=article-header><h3><a href=/posts/theres-nothing-wrong-with-distro-hopping/>There's Nothing Wrong With Distro Hopping</a></h3><time datetime=2026-01-21 class=article-date>Jan 21, 2026</time></div><p class=article-excerpt>Distro hopping is often treated like a phase Linux users are supposed to grow out of. Something beginners do before they &ldquo;settle down,&rdquo; pick a distribution, and stop reinstalling their system every few months.
+But looking at how the Raspberry Pi is used today, it&rsquo;s hard to ignore that something changed along the way. Not because of one bad decision, and not because anyone acted in bad faith, but because the world it entered slowly reshaped what it became.
+</p>
+        <a href="/posts/the-raspberry-pi-outgrew-its-original-promise/" class="read-link">Read article →</a>
+      </article>
+    
+      <article class="article-item">
+        <div class="article-header">
+          <h3><a href="/posts/theres-nothing-wrong-with-distro-hopping/">There&#39;s Nothing Wrong With Distro Hopping</a></h3>
+          <time datetime="2026-01-21" class="article-date">
+            Jan 21, 2026
+          </time>
+        </div>
+        <p class="article-excerpt">Distro hopping is often treated like a phase Linux users are supposed to grow out of. Something beginners do before they &ldquo;settle down,&rdquo; pick a distribution, and stop reinstalling their system every few months.
 But honestly? There&rsquo;s nothing wrong with distro hopping.
 In fact, it&rsquo;s one of the most natural—and most honest—ways to learn Linux.
-At its core, distro hopping isn&rsquo;t about indecision. It&rsquo;s about curiosity. And curiosity is how people actually understand the Linux world.</p><a href=/posts/theres-nothing-wrong-with-distro-hopping/ class=read-link>Read article →</a></article></div></section></main><footer class=site-footer-terminal><div class=footer-container><div class=footer-nav-section><p class=footer-prompt>user@linuxdive:~$ <span class=footer-command>ls ./navigation</span></p><nav class=footer-nav><a href=/about/ class=footer-link>./about</a>
-<a href=/privacy/ class=footer-link>./privacy</a>
-<a href=/terms/ class=footer-link>./terms</a>
-<a href=/contact/ class=footer-link>./contact</a></nav></div><div class=footer-info-section><p class=footer-uptime>Uptime: 2026</p><p class=footer-tagline><span class=footer-command>echo</span> "For the love of Linux"</p></div></div><div class=footer-copyright><span>&copy; 2026 LinuxDive.com</span> | <span>All rights reserved</span></div></footer></body></html>
+At its core, distro hopping isn&rsquo;t about indecision. It&rsquo;s about curiosity. And curiosity is how people actually understand the Linux world.
+</p>
+        <a href="/posts/theres-nothing-wrong-with-distro-hopping/" class="read-link">Read article →</a>
+      </article>
+    
+  </div>
+</section>
+
+  </main>
+  
+  <footer class="site-footer-terminal">
+  <div class="footer-container">
+    <div class="footer-nav-section">
+      <p class="footer-prompt">user@linuxdive:~$ <span class="footer-command">ls ./navigation</span></p>
+      <nav class="footer-nav">
+        <a href="/about/" class="footer-link">./about</a>
+        <a href="/privacy/" class="footer-link">./privacy</a>
+        <a href="/terms/" class="footer-link">./terms</a>
+        <a href="/contact/" class="footer-link">./contact</a>
+      </nav>
+    </div>
+
+    <div class="footer-info-section">
+      <p class="footer-uptime">Uptime: 2026</p>
+      <p class="footer-tagline"><span class="footer-command">echo</span> "For the love of Linux"</p>
+    </div>
+  </div>
+  
+  <div class="footer-copyright">
+    <span>&copy; 2026 LinuxDive.com</span> | <span>All rights reserved</span>
+  </div>
+</footer>
+
+</body>
+</html>

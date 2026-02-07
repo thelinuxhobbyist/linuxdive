@@ -1,22 +1,177 @@
-<!doctype html><html lang=en><head><script async src="https://www.googletagmanager.com/gtag/js?id=G-FB2GJWT21S"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-FB2GJWT21S")</script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Pages - The Fun, Unexpected Side of Linux</title><meta name=description content="Linux Dive covers the coolest uses of Linux in business, education, gaming, and beyond. From home projects to big industry, discover the fun side of Linux."><link rel=stylesheet href=/css/style.css><link rel=stylesheet href="https://fonts.googleapis.com/icon?family=Material+Icons"></head><body><header class=site-header><nav class=header-nav><div class=nav-brand><a href=/>LinuxDive</a></div><button class=mobile-menu-toggle id=mobileMenuToggle aria-label="Toggle navigation menu">
-<span class=material-icons id=menuIcon>menu</span>
-<span class=material-icons id=closeIcon style=display:none>close</span></button><div class=nav-links id=navLinks><a href=/>Home</a>
-<a href=/society/>Society</a>
-<a href=/work/>Work</a>
-<a href=/culture/>Culture</a>
-<a href=/everyday/>Everyday</a></div></nav></header><script>const toggle=document.getElementById("mobileMenuToggle"),navLinks=document.getElementById("navLinks"),menuIcon=document.getElementById("menuIcon"),closeIcon=document.getElementById("closeIcon");toggle.addEventListener("click",function(){navLinks.classList.toggle("active"),navLinks.classList.contains("active")?(menuIcon.style.display="none",closeIcon.style.display="block"):(menuIcon.style.display="block",closeIcon.style.display="none")}),document.querySelectorAll("#navLinks a").forEach(e=>{e.addEventListener("click",function(){navLinks.classList.remove("active"),menuIcon.style.display="block",closeIcon.style.display="none"})}),document.addEventListener("click",function(e){let t=e.target.closest(".article-item, .pillar-article, .featured-article");if(t&&e.target.tagName!=="A"&&e.target.tagName!=="BUTTON"){let n=t.querySelector("h3 a")||t.querySelector("h1 a")||t.querySelector("a");n&&(e.preventDefault(),window.location.href=n.href)}})</script><main><section class=posts-section><h1>Pages</h1><div class=articles-list><article class=article-item><div class=article-header><h3><a href=/contact/>Contact</a></h3><time datetime=2026-01-29 class=article-date>Jan 29, 2026</time></div><p class=article-excerpt>Get in Touch We&rsquo;d love to hear from you! Whether you have feedback, questions, or just want to chat about Linux, feel free to reach out.
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FB2GJWT21S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FB2GJWT21S');
+  </script>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pages - The Fun, Unexpected Side of Linux</title>
+  <meta name="description" content="Linux Dive covers the coolest uses of Linux in business, education, gaming, and beyond. From home projects to big industry, discover the fun side of Linux.">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <header class="site-header">
+  <nav class="header-nav">
+    <div class="nav-brand">
+      <a href="/"><img src="/images/LinuxDive_logoV2.svg" alt="LinuxDive" class="logo"></a>
+    </div>
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+      <span class="material-icons" id="menuIcon">menu</span>
+      <span class="material-icons" id="closeIcon" style="display: none;">close</span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="/">Home</a>
+      <a href="/society/">Society</a>
+      <a href="/work/">Work</a>
+      <a href="/culture/">Culture</a>
+      <a href="/everyday/">Everyday</a>
+    </div>
+  </nav>
+</header>
+<script>
+  const toggle = document.getElementById('mobileMenuToggle');
+  const navLinks = document.getElementById('navLinks');
+  const menuIcon = document.getElementById('menuIcon');
+  const closeIcon = document.getElementById('closeIcon');
+  
+  toggle.addEventListener('click', function() {
+    navLinks.classList.toggle('active');
+    if (navLinks.classList.contains('active')) {
+      menuIcon.style.display = 'none';
+      closeIcon.style.display = 'block';
+    } else {
+      menuIcon.style.display = 'block';
+      closeIcon.style.display = 'none';
+    }
+  });
+  
+  document.querySelectorAll('#navLinks a').forEach(link => {
+    link.addEventListener('click', function() {
+      navLinks.classList.remove('active');
+      menuIcon.style.display = 'block';
+      closeIcon.style.display = 'none';
+    });
+  });
+  
+  
+  document.addEventListener('click', function(e) {
+    
+    let article = e.target.closest('.article-item, .pillar-article, .featured-article');
+    
+    if (article && e.target.tagName !== 'A' && e.target.tagName !== 'BUTTON') {
+      
+      let link = article.querySelector('h3 a') || article.querySelector('h1 a') || article.querySelector('a');
+      if (link) {
+        e.preventDefault();
+        window.location.href = link.href;
+      }
+    }
+  });
+</script>
+
+  
+  <main>
+    
+<section class="posts-section">
+  <h1>Pages</h1>
+  <div class="articles-list">
+    
+      <article class="article-item">
+        <div class="article-header">
+          <h3><a href="/contact/">Contact</a></h3>
+          <time datetime="2026-01-29" class="article-date">
+            Jan 29, 2026
+          </time>
+        </div>
+        <p class="article-excerpt">Get in Touch We&rsquo;d love to hear from you! Whether you have feedback, questions, or just want to chat about Linux, feel free to reach out.
 Email contact@linuxdive.com
 We typically respond within 24-48 hours.
-What We&rsquo;re Open To Questions about Linux and distro recommendations Feedback on articles and content Guest contributions or collaboration ideas Bug reports or technical issues with the site Response Times Due to the volume of emails, we may not be able to respond to every message, but we read and appreciate all feedback.</p><a href=/contact/ class=read-link>Read article →</a></article><article class=article-item><div class=article-header><h3><a href=/privacy/>Privacy Policy</a></h3><time datetime=2026-01-29 class=article-date>Jan 29, 2026</time></div><p class=article-excerpt>Privacy Policy This Privacy Policy explains how LinuxDive.com collects, uses, and protects your information.
+What We&rsquo;re Open To Questions about Linux and distro recommendations Feedback on articles and content Guest contributions or collaboration ideas Bug reports or technical issues with the site Response Times Due to the volume of emails, we may not be able to respond to every message, but we read and appreciate all feedback.
+</p>
+        <a href="/contact/" class="read-link">Read article →</a>
+      </article>
+    
+      <article class="article-item">
+        <div class="article-header">
+          <h3><a href="/privacy/">Privacy Policy</a></h3>
+          <time datetime="2026-01-29" class="article-date">
+            Jan 29, 2026
+          </time>
+        </div>
+        <p class="article-excerpt">Privacy Policy This Privacy Policy explains how LinuxDive.com collects, uses, and protects your information.
 Information We Collect We do not collect personal information unless you voluntarily provide it to us through contact forms or other interactions.
-Cookies & Tracking LinuxDive.com does not use cookies or tracking technologies. We respect your privacy and do not monitor your browsing behavior.
-Third-Party Services We do not share your data with third-party advertisers or analytics services.</p><a href=/privacy/ class=read-link>Read article →</a></article><article class=article-item><div class=article-header><h3><a href=/terms/>Terms of Service</a></h3><time datetime=2026-01-29 class=article-date>Jan 29, 2026</time></div><p class=article-excerpt>Terms of Service Welcome to LinuxDive.com. By accessing and using this website, you agree to be bound by these terms.
+Cookies &amp; Tracking LinuxDive.com does not use cookies or tracking technologies. We respect your privacy and do not monitor your browsing behavior.
+Third-Party Services We do not share your data with third-party advertisers or analytics services.
+</p>
+        <a href="/privacy/" class="read-link">Read article →</a>
+      </article>
+    
+      <article class="article-item">
+        <div class="article-header">
+          <h3><a href="/terms/">Terms of Service</a></h3>
+          <time datetime="2026-01-29" class="article-date">
+            Jan 29, 2026
+          </time>
+        </div>
+        <p class="article-excerpt">Terms of Service Welcome to LinuxDive.com. By accessing and using this website, you agree to be bound by these terms.
 Content License All content on LinuxDive.com, including text, images, and design, is the property of LinuxDive or its content creators. You may view and share content for personal, non-commercial purposes.
 Acceptable Use You agree not to:
-Reproduce, distribute, or transmit content without permission Attempt to gain unauthorized access to the site Engage in any form of harassment or abuse Disclaimer The content on LinuxDive.com is provided &ldquo;as is&rdquo; without warranties. We do not guarantee accuracy or completeness of information related to Linux, distros, or other technical topics.</p><a href=/terms/ class=read-link>Read article →</a></article><article class=article-item><div class=article-header><h3><a href=/about/>About</a></h3><time datetime=2025-12-01 class=article-date>Dec 1, 2025</time></div><p class=article-excerpt>LinuxDive is an editorial publication exploring Linux&rsquo;s impact on modern society and technology.
+Reproduce, distribute, or transmit content without permission Attempt to gain unauthorized access to the site Engage in any form of harassment or abuse Disclaimer The content on LinuxDive.com is provided &ldquo;as is&rdquo; without warranties. We do not guarantee accuracy or completeness of information related to Linux, distros, or other technical topics.
+</p>
+        <a href="/terms/" class="read-link">Read article →</a>
+      </article>
+    
+      <article class="article-item">
+        <div class="article-header">
+          <h3><a href="/about/">About</a></h3>
+          <time datetime="2025-12-01" class="article-date">
+            Dec 1, 2025
+          </time>
+        </div>
+        <p class="article-excerpt">LinuxDive is an editorial publication exploring Linux&rsquo;s impact on modern society and technology.
 We believe that understanding how Linux shapes government, education, business, personal computing, and open source communities is essential for anyone interested in technology&rsquo;s future.
 Our articles are written with depth and care, exploring not just the technical details but the human and organizational dimensions of Linux adoption and use.
-We&rsquo;re committed to independent, thoughtful journalism about technology that matters.</p><a href=/about/ class=read-link>Read article →</a></article></div></section></main><footer class=site-footer-terminal><div class=footer-container><div class=footer-nav-section><p class=footer-prompt>user@linuxdive:~$ <span class=footer-command>ls ./navigation</span></p><nav class=footer-nav><a href=/about/ class=footer-link>./about</a>
-<a href=/privacy/ class=footer-link>./privacy</a>
-<a href=/terms/ class=footer-link>./terms</a>
-<a href=/contact/ class=footer-link>./contact</a></nav></div><div class=footer-info-section><p class=footer-uptime>Uptime: 2026</p><p class=footer-tagline><span class=footer-command>echo</span> "For the love of Linux"</p></div></div><div class=footer-copyright><span>&copy; 2026 LinuxDive.com</span> | <span>All rights reserved</span></div></footer></body></html>
+We&rsquo;re committed to independent, thoughtful journalism about technology that matters.
+</p>
+        <a href="/about/" class="read-link">Read article →</a>
+      </article>
+    
+  </div>
+</section>
+
+  </main>
+  
+  <footer class="site-footer-terminal">
+  <div class="footer-container">
+    <div class="footer-nav-section">
+      <p class="footer-prompt">user@linuxdive:~$ <span class="footer-command">ls ./navigation</span></p>
+      <nav class="footer-nav">
+        <a href="/about/" class="footer-link">./about</a>
+        <a href="/privacy/" class="footer-link">./privacy</a>
+        <a href="/terms/" class="footer-link">./terms</a>
+        <a href="/contact/" class="footer-link">./contact</a>
+      </nav>
+    </div>
+
+    <div class="footer-info-section">
+      <p class="footer-uptime">Uptime: 2026</p>
+      <p class="footer-tagline"><span class="footer-command">echo</span> "For the love of Linux"</p>
+    </div>
+  </div>
+  
+  <div class="footer-copyright">
+    <span>&copy; 2026 LinuxDive.com</span> | <span>All rights reserved</span>
+  </div>
+</footer>
+
+</body>
+</html>

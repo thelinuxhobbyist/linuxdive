@@ -1,13 +1,125 @@
-<!doctype html><html lang=en><head><script async src="https://www.googletagmanager.com/gtag/js?id=G-FB2GJWT21S"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-FB2GJWT21S")</script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Community - The Fun, Unexpected Side of Linux</title><meta name=description content="Linux Dive covers the coolest uses of Linux in business, education, gaming, and beyond. From home projects to big industry, discover the fun side of Linux."><link rel=stylesheet href=/css/style.css><link rel=stylesheet href="https://fonts.googleapis.com/icon?family=Material+Icons"></head><body><header class=site-header><nav class=header-nav><div class=nav-brand><a href=/>LinuxDive</a></div><button class=mobile-menu-toggle id=mobileMenuToggle aria-label="Toggle navigation menu">
-<span class=material-icons id=menuIcon>menu</span>
-<span class=material-icons id=closeIcon style=display:none>close</span></button><div class=nav-links id=navLinks><a href=/>Home</a>
-<a href=/society/>Society</a>
-<a href=/work/>Work</a>
-<a href=/culture/>Culture</a>
-<a href=/everyday/>Everyday</a></div></nav></header><script>const toggle=document.getElementById("mobileMenuToggle"),navLinks=document.getElementById("navLinks"),menuIcon=document.getElementById("menuIcon"),closeIcon=document.getElementById("closeIcon");toggle.addEventListener("click",function(){navLinks.classList.toggle("active"),navLinks.classList.contains("active")?(menuIcon.style.display="none",closeIcon.style.display="block"):(menuIcon.style.display="block",closeIcon.style.display="none")}),document.querySelectorAll("#navLinks a").forEach(e=>{e.addEventListener("click",function(){navLinks.classList.remove("active"),menuIcon.style.display="block",closeIcon.style.display="none"})}),document.addEventListener("click",function(e){let t=e.target.closest(".article-item, .pillar-article, .featured-article");if(t&&e.target.tagName!=="A"&&e.target.tagName!=="BUTTON"){let n=t.querySelector("h3 a")||t.querySelector("h1 a")||t.querySelector("a");n&&(e.preventDefault(),window.location.href=n.href)}})</script><main><div class=taxonomy><h1>Community</h1><div class=taxonomy-list><a href=/everyday/when-games-started-working-linux-got-new-users/>When Games Started Working, Linux Got New Users</a>
-<a href=/posts/when-games-started-working-linux-got-new-users/>When Games Started Working, Linux Got New Users</a>
-<a href=/culture/theres-nothing-wrong-with-distro-hopping/>There's Nothing Wrong With Distro Hopping</a>
-<a href=/posts/theres-nothing-wrong-with-distro-hopping/>There's Nothing Wrong With Distro Hopping</a></div></div></main><footer class=site-footer-terminal><div class=footer-container><div class=footer-nav-section><p class=footer-prompt>user@linuxdive:~$ <span class=footer-command>ls ./navigation</span></p><nav class=footer-nav><a href=/about/ class=footer-link>./about</a>
-<a href=/privacy/ class=footer-link>./privacy</a>
-<a href=/terms/ class=footer-link>./terms</a>
-<a href=/contact/ class=footer-link>./contact</a></nav></div><div class=footer-info-section><p class=footer-uptime>Uptime: 2026</p><p class=footer-tagline><span class=footer-command>echo</span> "For the love of Linux"</p></div></div><div class=footer-copyright><span>&copy; 2026 LinuxDive.com</span> | <span>All rights reserved</span></div></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FB2GJWT21S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FB2GJWT21S');
+  </script>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community - The Fun, Unexpected Side of Linux</title>
+  <meta name="description" content="Linux Dive covers the coolest uses of Linux in business, education, gaming, and beyond. From home projects to big industry, discover the fun side of Linux.">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <header class="site-header">
+  <nav class="header-nav">
+    <div class="nav-brand">
+      <a href="/"><img src="/images/LinuxDive_logoV2.svg" alt="LinuxDive" class="logo"></a>
+    </div>
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+      <span class="material-icons" id="menuIcon">menu</span>
+      <span class="material-icons" id="closeIcon" style="display: none;">close</span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="/">Home</a>
+      <a href="/society/">Society</a>
+      <a href="/work/">Work</a>
+      <a href="/culture/">Culture</a>
+      <a href="/everyday/">Everyday</a>
+    </div>
+  </nav>
+</header>
+<script>
+  const toggle = document.getElementById('mobileMenuToggle');
+  const navLinks = document.getElementById('navLinks');
+  const menuIcon = document.getElementById('menuIcon');
+  const closeIcon = document.getElementById('closeIcon');
+  
+  toggle.addEventListener('click', function() {
+    navLinks.classList.toggle('active');
+    if (navLinks.classList.contains('active')) {
+      menuIcon.style.display = 'none';
+      closeIcon.style.display = 'block';
+    } else {
+      menuIcon.style.display = 'block';
+      closeIcon.style.display = 'none';
+    }
+  });
+  
+  document.querySelectorAll('#navLinks a').forEach(link => {
+    link.addEventListener('click', function() {
+      navLinks.classList.remove('active');
+      menuIcon.style.display = 'block';
+      closeIcon.style.display = 'none';
+    });
+  });
+  
+  
+  document.addEventListener('click', function(e) {
+    
+    let article = e.target.closest('.article-item, .pillar-article, .featured-article');
+    
+    if (article && e.target.tagName !== 'A' && e.target.tagName !== 'BUTTON') {
+      
+      let link = article.querySelector('h3 a') || article.querySelector('h1 a') || article.querySelector('a');
+      if (link) {
+        e.preventDefault();
+        window.location.href = link.href;
+      }
+    }
+  });
+</script>
+
+  
+  <main>
+    
+<div class="taxonomy">
+  <h1>Community</h1>
+  <div class="taxonomy-list">
+    
+      <a href="/everyday/when-games-started-working-linux-got-new-users/">When Games Started Working, Linux Got New Users</a>
+    
+      <a href="/posts/when-games-started-working-linux-got-new-users/">When Games Started Working, Linux Got New Users</a>
+    
+      <a href="/culture/theres-nothing-wrong-with-distro-hopping/">There&#39;s Nothing Wrong With Distro Hopping</a>
+    
+      <a href="/posts/theres-nothing-wrong-with-distro-hopping/">There&#39;s Nothing Wrong With Distro Hopping</a>
+    
+  </div>
+</div>
+
+  </main>
+  
+  <footer class="site-footer-terminal">
+  <div class="footer-container">
+    <div class="footer-nav-section">
+      <p class="footer-prompt">user@linuxdive:~$ <span class="footer-command">ls ./navigation</span></p>
+      <nav class="footer-nav">
+        <a href="/about/" class="footer-link">./about</a>
+        <a href="/privacy/" class="footer-link">./privacy</a>
+        <a href="/terms/" class="footer-link">./terms</a>
+        <a href="/contact/" class="footer-link">./contact</a>
+      </nav>
+    </div>
+
+    <div class="footer-info-section">
+      <p class="footer-uptime">Uptime: 2026</p>
+      <p class="footer-tagline"><span class="footer-command">echo</span> "For the love of Linux"</p>
+    </div>
+  </div>
+  
+  <div class="footer-copyright">
+    <span>&copy; 2026 LinuxDive.com</span> | <span>All rights reserved</span>
+  </div>
+</footer>
+
+</body>
+</html>

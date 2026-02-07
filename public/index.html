@@ -1,13 +1,269 @@
-<!doctype html><html lang=en><head><meta name=generator content="Hugo 0.152.2"><script async src="https://www.googletagmanager.com/gtag/js?id=G-FB2GJWT21S"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-FB2GJWT21S")</script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>The Fun, Unexpected Side of Linux</title><meta name=description content="Linux Dive covers the coolest uses of Linux in business, education, gaming, and beyond. From home projects to big industry, discover the fun side of Linux."><link rel=stylesheet href=/css/style.css><link rel=stylesheet href="https://fonts.googleapis.com/icon?family=Material+Icons"></head><body><header class=site-header><nav class=header-nav><div class=nav-brand><a href=/>LinuxDive</a></div><button class=mobile-menu-toggle id=mobileMenuToggle aria-label="Toggle navigation menu">
-<span class=material-icons id=menuIcon>menu</span>
-<span class=material-icons id=closeIcon style=display:none>close</span></button><div class=nav-links id=navLinks><a href=/>Home</a>
-<a href=/society/>Society</a>
-<a href=/work/>Work</a>
-<a href=/culture/>Culture</a>
-<a href=/everyday/>Everyday</a></div></nav></header><script>const toggle=document.getElementById("mobileMenuToggle"),navLinks=document.getElementById("navLinks"),menuIcon=document.getElementById("menuIcon"),closeIcon=document.getElementById("closeIcon");toggle.addEventListener("click",function(){navLinks.classList.toggle("active"),navLinks.classList.contains("active")?(menuIcon.style.display="none",closeIcon.style.display="block"):(menuIcon.style.display="block",closeIcon.style.display="none")}),document.querySelectorAll("#navLinks a").forEach(e=>{e.addEventListener("click",function(){navLinks.classList.remove("active"),menuIcon.style.display="block",closeIcon.style.display="none"})}),document.addEventListener("click",function(e){let t=e.target.closest(".article-item, .pillar-article, .featured-article");if(t&&e.target.tagName!=="A"&&e.target.tagName!=="BUTTON"){let n=t.querySelector("h3 a")||t.querySelector("h1 a")||t.querySelector("a");n&&(e.preventDefault(),window.location.href=n.href)}})</script><main><div class=homepage><section class=hero-section><div class=hero-content><h1 class=hero-title>Linux Beyond the Terminal</h1><p class=hero-subtitle>Stories about how Linux is quietly reshaping government, work, education, and everyday life.</p><p class=hero-description>LinuxDive explores Linux as a cultural, institutional, and economic force—not just code, but the decisions, communities, and moments that prove it matters.</p></div></section><section class=primary-featured><article class=featured-article-main><div class=featured-image-large><img src=https://cdn.linuxdive.com/obsessing.webp alt="Stop Obsessing Over Your First Linux Distro – Just Pick One Already!"></div><div class=featured-content-main><h2>Stop Obsessing Over Your First Linux Distro – Just Pick One Already!</h2><div class=article-meta><time datetime=2026-01-25>January 25, 2026
-</time><span class=author>By Neil Cass</span></div><p class=article-excerpt>So, you&rsquo;ve decided to dip your toes into the wide, wild world of Linux. You&rsquo;ve read a few guides, watched some videos, maybe lurked in a subreddit or two, and suddenly your head is spinning with names like Ubuntu, Fedora, Arch, Manjaro, Debian… and let&rsquo;s not even mention the billion flavors in between.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.152.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FB2GJWT21S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FB2GJWT21S');
+  </script>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fun, Unexpected Side of Linux</title>
+  <meta name="description" content="Linux Dive covers the coolest uses of Linux in business, education, gaming, and beyond. From home projects to big industry, discover the fun side of Linux.">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <header class="site-header">
+  <nav class="header-nav">
+    <div class="nav-brand">
+      <a href="/"><img src="/images/LinuxDive_logoV2.svg" alt="LinuxDive" class="logo"></a>
+    </div>
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+      <span class="material-icons" id="menuIcon">menu</span>
+      <span class="material-icons" id="closeIcon" style="display: none;">close</span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="/">Home</a>
+      <a href="/society/">Society</a>
+      <a href="/work/">Work</a>
+      <a href="/culture/">Culture</a>
+      <a href="/everyday/">Everyday</a>
+    </div>
+  </nav>
+</header>
+<script>
+  const toggle = document.getElementById('mobileMenuToggle');
+  const navLinks = document.getElementById('navLinks');
+  const menuIcon = document.getElementById('menuIcon');
+  const closeIcon = document.getElementById('closeIcon');
+  
+  toggle.addEventListener('click', function() {
+    navLinks.classList.toggle('active');
+    if (navLinks.classList.contains('active')) {
+      menuIcon.style.display = 'none';
+      closeIcon.style.display = 'block';
+    } else {
+      menuIcon.style.display = 'block';
+      closeIcon.style.display = 'none';
+    }
+  });
+  
+  document.querySelectorAll('#navLinks a').forEach(link => {
+    link.addEventListener('click', function() {
+      navLinks.classList.remove('active');
+      menuIcon.style.display = 'block';
+      closeIcon.style.display = 'none';
+    });
+  });
+  
+  
+  document.addEventListener('click', function(e) {
+    
+    let article = e.target.closest('.article-item, .pillar-article, .featured-article');
+    
+    if (article && e.target.tagName !== 'A' && e.target.tagName !== 'BUTTON') {
+      
+      let link = article.querySelector('h3 a') || article.querySelector('h1 a') || article.querySelector('a');
+      if (link) {
+        e.preventDefault();
+        window.location.href = link.href;
+      }
+    }
+  });
+</script>
+
+  
+  <main>
+    
+<div class="homepage">
+  
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">Linux Beyond the Terminal</h1>
+      <p class="hero-subtitle">Stories about how Linux is quietly reshaping government, work, education, and everyday life.</p>
+      <p class="hero-description">LinuxDive explores Linux as a cultural, institutional, and economic force—not just code, but the decisions, communities, and moments that prove it matters.</p>
+    </div>
+  </section>
+
+  
+  
+  
+    
+    <section class="primary-featured">
+      <article class="featured-article-main">
+        
+          <div class="featured-image-large">
+            <img src="https://cdn.linuxdive.com/obsessing.webp" alt="Stop Obsessing Over Your First Linux Distro – Just Pick One Already!">
+          </div>
+        
+        <div class="featured-content-main">
+          <h2>Stop Obsessing Over Your First Linux Distro – Just Pick One Already!</h2>
+          <div class="article-meta">
+            <time datetime="2026-01-25">
+              January 25, 2026
+            </time>
+            
+              <span class="author">By Neil Cass</span>
+            
+          </div>
+          <p class="article-excerpt">So, you&rsquo;ve decided to dip your toes into the wide, wild world of Linux. You&rsquo;ve read a few guides, watched some videos, maybe lurked in a subreddit or two, and suddenly your head is spinning with names like Ubuntu, Fedora, Arch, Manjaro, Debian… and let&rsquo;s not even mention the billion flavors in between.
 And now you&rsquo;re stuck. Paralyzed. Asking yourself, &ldquo;Which distro should I start with?&rdquo;
-Here&rsquo;s the thing: the question itself is a trap. A beautiful, shiny, anxiety-inducing trap. The truth is, the &ldquo;perfect first Linux distro&rdquo; doesn&rsquo;t exist. And obsessing over it? Totally unnecessary.</p><a href=/culture/stop-obsessing-over-your-first-linux-distro/ class=read-link>Read article →</a></div></article></section><section class=section-preview><div class=section-header><h2><a href=/society/>Linux & Society</a></h2><p class=section-preview-desc>How Linux shapes policy, education, finance, and public institutions.</p></div><div class=section-preview-articles><article class=preview-article-card><div class=preview-image><img src=https://cdn.linuxdive.com/pi.webp alt="The Raspberry Pi Outgrew Its Original Promise"></div><div class=preview-content><h3><a href=/society/the-raspberry-pi-outgrew-its-original-promise/>The Raspberry Pi Outgrew Its Original Promise</a></h3><time datetime=2026-01-21 class=preview-date>Jan 21, 2026</time></div></article></div><a href=/society/ class=view-all-link>View all articles →</a></section><section class=section-preview><div class=section-header><h2><a href=/culture/>Linux Culture</a></h2><p class=section-preview-desc>Community, philosophy, and the ideas driving Linux forward.</p></div><div class=section-preview-articles><article class=preview-article-card><div class=preview-image><img src=https://cdn.linuxdive.com/obsessing.webp alt="Stop Obsessing Over Your First Linux Distro – Just Pick One Already!"></div><div class=preview-content><h3><a href=/culture/stop-obsessing-over-your-first-linux-distro/>Stop Obsessing Over Your First Linux Distro – Just Pick One Already!</a></h3><time datetime=2026-01-25 class=preview-date>Jan 25, 2026</time></div></article><article class=preview-article-card><div class=preview-image><img src=https://cdn.linuxdive.com/distro.webp alt="There's Nothing Wrong With Distro Hopping"></div><div class=preview-content><h3><a href=/culture/theres-nothing-wrong-with-distro-hopping/>There's Nothing Wrong With Distro Hopping</a></h3><time datetime=2026-01-21 class=preview-date>Jan 21, 2026</time></div></article></div><a href=/culture/ class=view-all-link>View all articles →</a></section><section class=section-preview><div class=section-header><h2><a href=/everyday/>Everyday Linux</a></h2><p class=section-preview-desc>Gaming, hardware, personal computing, and Linux in everyday life.</p></div><div class=section-preview-articles><article class=preview-article-card><div class=preview-image><img src=https://cdn.linuxdive.com/linux-games.webp alt="When Games Started Working, Linux Got New Users"></div><div class=preview-content><h3><a href=/everyday/when-games-started-working-linux-got-new-users/>When Games Started Working, Linux Got New Users</a></h3><time datetime=2026-01-24 class=preview-date>Jan 24, 2026</time></div></article></div><a href=/everyday/ class=view-all-link>View all articles →</a></section></div></main><footer class=site-footer-terminal><div class=footer-container><div class=footer-nav-section><p class=footer-prompt>user@linuxdive:~$ <span class=footer-command>ls ./navigation</span></p><nav class=footer-nav><a href=/about/ class=footer-link>./about</a>
-<a href=/privacy/ class=footer-link>./privacy</a>
-<a href=/terms/ class=footer-link>./terms</a>
-<a href=/contact/ class=footer-link>./contact</a></nav></div><div class=footer-info-section><p class=footer-uptime>Uptime: 2026</p><p class=footer-tagline><span class=footer-command>echo</span> "For the love of Linux"</p></div></div><div class=footer-copyright><span>&copy; 2026 LinuxDive.com</span> | <span>All rights reserved</span></div></footer></body></html>
+Here&rsquo;s the thing: the question itself is a trap. A beautiful, shiny, anxiety-inducing trap. The truth is, the &ldquo;perfect first Linux distro&rdquo; doesn&rsquo;t exist. And obsessing over it? Totally unnecessary.
+</p>
+          <a href="/culture/stop-obsessing-over-your-first-linux-distro/" class="read-link">Read article →</a>
+        </div>
+      </article>
+    </section>
+    
+  
+
+  
+  
+  
+  
+    
+    
+      <section class="section-preview">
+        <div class="section-header">
+          <h2><a href="/society/">Linux &amp; Society</a></h2>
+          <p class="section-preview-desc">How Linux shapes policy, education, finance, and public institutions.</p>
+        </div>
+        <div class="section-preview-articles">
+          
+            <article class="preview-article-card">
+              
+                <div class="preview-image">
+                  <img src="https://cdn.linuxdive.com/pi.webp" alt="The Raspberry Pi Outgrew Its Original Promise">
+                </div>
+              
+              <div class="preview-content">
+                <h3><a href="/society/the-raspberry-pi-outgrew-its-original-promise/">The Raspberry Pi Outgrew Its Original Promise</a></h3>
+                <time datetime="2026-01-21" class="preview-date">
+                  Jan 21, 2026
+                </time>
+              </div>
+            </article>
+          
+        </div>
+        <a href="/society/" class="view-all-link">View all articles →</a>
+      </section>
+    
+  
+
+  
+  
+    
+    
+  
+
+  
+  
+    
+    
+      <section class="section-preview">
+        <div class="section-header">
+          <h2><a href="/culture/">Linux Culture</a></h2>
+          <p class="section-preview-desc">Community, philosophy, and the ideas driving Linux forward.</p>
+        </div>
+        <div class="section-preview-articles">
+          
+            <article class="preview-article-card">
+              
+                <div class="preview-image">
+                  <img src="https://cdn.linuxdive.com/obsessing.webp" alt="Stop Obsessing Over Your First Linux Distro – Just Pick One Already!">
+                </div>
+              
+              <div class="preview-content">
+                <h3><a href="/culture/stop-obsessing-over-your-first-linux-distro/">Stop Obsessing Over Your First Linux Distro – Just Pick One Already!</a></h3>
+                <time datetime="2026-01-25" class="preview-date">
+                  Jan 25, 2026
+                </time>
+              </div>
+            </article>
+          
+            <article class="preview-article-card">
+              
+                <div class="preview-image">
+                  <img src="https://cdn.linuxdive.com/distro.webp" alt="There&#39;s Nothing Wrong With Distro Hopping">
+                </div>
+              
+              <div class="preview-content">
+                <h3><a href="/culture/theres-nothing-wrong-with-distro-hopping/">There&#39;s Nothing Wrong With Distro Hopping</a></h3>
+                <time datetime="2026-01-21" class="preview-date">
+                  Jan 21, 2026
+                </time>
+              </div>
+            </article>
+          
+        </div>
+        <a href="/culture/" class="view-all-link">View all articles →</a>
+      </section>
+    
+  
+
+  
+  
+    
+    
+      <section class="section-preview">
+        <div class="section-header">
+          <h2><a href="/everyday/">Everyday Linux</a></h2>
+          <p class="section-preview-desc">Gaming, hardware, personal computing, and Linux in everyday life.</p>
+        </div>
+        <div class="section-preview-articles">
+          
+            <article class="preview-article-card">
+              
+                <div class="preview-image">
+                  <img src="https://cdn.linuxdive.com/linux-games.webp" alt="When Games Started Working, Linux Got New Users">
+                </div>
+              
+              <div class="preview-content">
+                <h3><a href="/everyday/when-games-started-working-linux-got-new-users/">When Games Started Working, Linux Got New Users</a></h3>
+                <time datetime="2026-01-24" class="preview-date">
+                  Jan 24, 2026
+                </time>
+              </div>
+            </article>
+          
+        </div>
+        <a href="/everyday/" class="view-all-link">View all articles →</a>
+      </section>
+    
+  
+</div>
+
+  </main>
+  
+  <footer class="site-footer-terminal">
+  <div class="footer-container">
+    <div class="footer-nav-section">
+      <p class="footer-prompt">user@linuxdive:~$ <span class="footer-command">ls ./navigation</span></p>
+      <nav class="footer-nav">
+        <a href="/about/" class="footer-link">./about</a>
+        <a href="/privacy/" class="footer-link">./privacy</a>
+        <a href="/terms/" class="footer-link">./terms</a>
+        <a href="/contact/" class="footer-link">./contact</a>
+      </nav>
+    </div>
+
+    <div class="footer-info-section">
+      <p class="footer-uptime">Uptime: 2026</p>
+      <p class="footer-tagline"><span class="footer-command">echo</span> "For the love of Linux"</p>
+    </div>
+  </div>
+  
+  <div class="footer-copyright">
+    <span>&copy; 2026 LinuxDive.com</span> | <span>All rights reserved</span>
+  </div>
+</footer>
+
+</body>
+</html>
